@@ -16,7 +16,10 @@ export default function Home() {
           priority
         />
 
-        <Button>Click me</Button>
+        <Button>Primary Small</Button>
+        <Button>Primary Medium</Button>
+        <Button>Primary Large</Button>
+        <Button>Secondary Large</Button>
         <div className={styles.intro}>
           <h1>To get started, edit the page.tsx file.</h1>
           <p>
