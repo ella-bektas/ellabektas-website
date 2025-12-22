@@ -1,9 +1,10 @@
 "use client";
 
-import { useState, ReactNode } from 'react';
+import { useState, ReactNode } from 'react'; 
+import styles from './Tabs.module.css';
 
 
-//ntitle defines the name of the tab
+//Title defines the name of the tab
 interface TabProps {
   title: string;
   children: ReactNode; // content in tab can be anything
@@ -16,23 +17,28 @@ interface TabsProps {
 const Tabs = ({ children }: TabsProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  // Normalize children into an array
+  // children into an array
   const tabs = Array.isArray(children) ? children : [children];
 
   return (
-    <div>
-      <div style={{ display: 'flex', gap: '8px', marginBottom: '1rem' }}>
+    <div className={styles.tabs}>
+      <div className={styles.tabsNav}>
         {tabs.map((child: any, index: number) => (
           <button
             key={index}
             onClick={() => setActiveIndex(index)}
+            className={`${styles.tabButton} ${
+              index === activeIndex ? styles.active : ''
+            }`}
           >
             {child.props.title}
           </button>
         ))}
       </div>
 
-      <div>{tabs[activeIndex]}</div>
+      <div className={styles.tabContent}>
+        {tabs[activeIndex]}
+      </div>
     </div>
   );
 };
