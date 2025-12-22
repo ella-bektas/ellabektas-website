@@ -17,6 +17,7 @@ export default function Home() {
         />
 
         <Button>Click Me</Button>
+        
         <Button iconLeft="Home" variant="primary">Click Me</Button>
         <div className={styles.intro}>
           <h1>To get started, edit the page.tsx file.</h1>
