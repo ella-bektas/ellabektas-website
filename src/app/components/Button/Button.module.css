@@ -1,30 +1,63 @@
 .primary {
-    background-color: #0070f3;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
-    font-weight: 500;
-    transition: background-color 0.2s;
-  }
-  
-  .primary:hover {
-    background-color: #005bb5;
-  }
-  
-  /* Secondary variant */
-  .secondary {
-    background-color: #e2e2e2;
-    color: #333;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-    font-weight: 500;
-    transition: background-color 0.2s;
-  }
-  
-  .secondary:hover {
-    background-color: #cfcfcf;
-  }
+  background-color: #44403C;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: solid;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  font-family: "Manrope", sans-serif;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5em; 
+}
+
+.primary:hover {
+  background-color: #1B1917;
+}
+
+/* Secondary variant */
+.secondary {
+  background-color: transparent;
+  color: #44403C;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: solid;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5em;
+}
+
+.secondary:hover {
+  background-color: #F5F5F5;
+}
+
+/* Tertiary variant */
+.tertiary {
+  background-color: transparent;
+  color: #44403C;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5em;
+}
+
+.tertiary:hover {
+  background-color: #F5F5F5;
+}
