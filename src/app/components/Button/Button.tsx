@@ -12,16 +12,18 @@ type ButtonProps = {
   iconRight?: IconName;
 }
 
-export const Button = ({ children, variant = 'primary', onClick, iconLeft }: ButtonProps) => {
+export const Button = ({ children, variant = 'primary', onClick, iconLeft, iconRight }: ButtonProps) => {
 
-  const IconComponent = iconLeft ? Icons[iconLeft] : null;
+  const LeftIcon = iconLeft ? Icons[iconLeft] : null;
+  const RightIcon = iconRight ? Icons[iconRight] : null;
 
   const className = styles[variant]; 
 
   return (
     <button className={className} onClick={onClick}>
-      {IconComponent && <IconComponent className={styles.icon} />}
+      {LeftIcon && <LeftIcon className={styles.icon} />}
       {children}
+      {RightIcon && <RightIcon className={styles.icon} />}
     </button>
   );
 }

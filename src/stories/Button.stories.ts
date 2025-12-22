@@ -1,4 +1,3 @@
-import React from 'react'
 import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 import { Button } from '../app/components/Button/Button';
 import { Icons, IconName } from "@/app/icons";
@@ -28,6 +27,7 @@ export const Primary: Story = {
         variant: 'primary',         
         onClick: () => alert('Clicked!'),
         iconLeft: 'None', 
+        iconRight: 'None', 
     },
 };
 
@@ -37,6 +37,7 @@ export const Secondary: Story = {
         variant: 'secondary',         
         onClick: () => alert('Clicked!'),
         iconLeft: 'None',
+        iconRight: 'None',
     },
 };
 
@@ -46,5 +47,6 @@ export const Tertiary: Story = {
         variant: 'tertiary',         
         onClick: () => alert('Clicked!'),
         iconLeft: 'None',
+        iconRight: 'None',
     },
 };
