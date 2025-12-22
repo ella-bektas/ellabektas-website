@@ -3,6 +3,7 @@ import { Button } from '../app/components/Button/Button';
 import { Icons, IconName } from "@/app/icons";
 
 const meta = {
+   title: 'Atoms/Button',
     component: Button,
     tags: ['!autodocs'],
     argTypes: {
