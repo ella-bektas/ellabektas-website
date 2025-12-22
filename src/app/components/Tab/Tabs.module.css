@@ -1,0 +1,16 @@
+.active {
+    background-color: #44403C;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: solid;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+    font-family: "Manrope", sans-serif;
+  
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em; 
+  }

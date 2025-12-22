@@ -1,6 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./page.module.css";
 import { Button } from './components/Button'
+import Tabs from './components/Tab/Tab';
+
 
 
 export default function Home() {
@@ -17,7 +21,20 @@ export default function Home() {
         />
 
         <Button>Click Me</Button>
-        
+        <Tabs>
+  <div title="Overview">
+    <p>This is the overview tab.</p>
+  </div>
+
+  <div title="Details">
+    <p>This is the details tab.</p>
+  </div>
+
+  <div title="Settings">
+    <p>This is the settings tab.</p>
+  </div>
+</Tabs>
+
         <Button iconLeft="Home" variant="primary">Click Me</Button>
         <div className={styles.intro}>
           <h1>To get started, edit the page.tsx file.</h1>
