@@ -1,5 +1,5 @@
 .primary {
-  background-color: #224E4A;
+  background-color: #44403C;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 20px;
@@ -12,17 +12,17 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 2px; 
+  gap: .5em; 
 }
 
 .primary:hover {
-  background-color: #245E5A;
+  background-color: #1B1917;
 }
 
 /* Secondary variant */
 .secondary {
   background-color: transparent;
-  color: #224E4A;
+  color: #44403C;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   border: solid;
@@ -33,17 +33,17 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 2px;
+  gap: .5em;
 }
 
 .secondary:hover {
-  background-color: #F3FDFA;
+  background-color: #F5F5F5;
 }
 
 /* Tertiary variant */
 .tertiary {
   background-color: transparent;
-  color: #224E4A;
+  color: #44403C;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   border-color: transparent;
@@ -55,9 +55,9 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 2px;
+  gap: .5em;
 }
 
 .tertiary:hover {
-  background-color: #F3FDFA;
+  background-color: #F5F5F5;
 }
