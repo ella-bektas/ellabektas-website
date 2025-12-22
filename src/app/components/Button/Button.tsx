@@ -5,13 +5,15 @@ import React from 'react'
 
 type ButtonProps = {
   children: React.ReactNode
-  variant?: 'primary' | 'secondary'
+  variant?: 'primary' | 'secondary' | 'tertiary'
   onClick?: () => void
+  icon?: React.ReactNode // the icon itself
+  iconLeft?: boolean
+  iconRight?: boolean
 }
 
 export const Button = ({ children, variant = 'primary', onClick }: ButtonProps) => {
-  const className =
-    variant === 'primary' ? styles.primary : styles.secondary
+  const className = styles[variant || 'primary']
 
   return (
     <button className={className} onClick={onClick}>

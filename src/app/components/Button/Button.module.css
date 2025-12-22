@@ -1,30 +1,44 @@
 .primary {
-    background-color: #788971;
+    background-color: #2B766F;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 20px;
-    border: none;
+    border: solid;
     cursor: pointer;
     font-weight: 500;
     transition: background-color 0.2s;
   }
   
   .primary:hover {
-    background-color: #384C3F;
+    background-color: #224E4A;
   }
   
   /* Secondary variant */
   .secondary {
-    background-color: #e2e2e2;
-    color: #333;
+    background-color: transparent;
+    color: #2B766F;
     padding: 0.5rem 1rem;
     border-radius: 20px;
-    border: none;
+    border: solid;
     cursor: pointer;
     font-weight: 500;
     transition: background-color 0.2s;
   }
   
   .secondary:hover {
-    background-color: #cfcfcf;
+    background-color: transparent;
+  }
+
+
+   /* Tertiary variant */
+   .tertiary {
+    background-color: transparent;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border-color: transparent;
+    border: solid;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
   }

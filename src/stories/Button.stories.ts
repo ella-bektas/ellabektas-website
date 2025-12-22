@@ -26,3 +26,11 @@ export const Secondary: Story = {
         onClick: () => alert('Clicked!'),
     },
   };
+
+  export const Tertiary: Story = {
+    args: {
+        children: 'Tertiary Button', 
+        variant: 'tertiary',         
+        onClick: () => alert('Clicked!'),
+    },
+  };
