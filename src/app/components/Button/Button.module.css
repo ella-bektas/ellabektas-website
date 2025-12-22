@@ -1,0 +1,30 @@
+.primary {
+    background-color: #0070f3;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+  
+  .primary:hover {
+    background-color: #005bb5;
+  }
+  
+  /* Secondary variant */
+  .secondary {
+    background-color: #e2e2e2;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+  
+  .secondary:hover {
+    background-color: #cfcfcf;
+  }
