@@ -1,5 +1,5 @@
 .primary {
-    background-color: #2B766F;
+    background-color: #224E4A;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 20px;
@@ -7,16 +7,17 @@
     cursor: pointer;
     font-weight: 500;
     transition: background-color 0.2s;
+    font-family: "Manrope", sans-serif;
   }
   
   .primary:hover {
-    background-color: #224E4A;
+    background-color: #245E5A;
   }
   
   /* Secondary variant */
   .secondary {
     background-color: transparent;
-    color: #2B766F;
+    color: #224E4A;
     padding: 0.5rem 1rem;
     border-radius: 20px;
     border: solid;
@@ -26,19 +27,23 @@
   }
   
   .secondary:hover {
-    background-color: transparent;
+    background-color: #F3FDFA;
   }
 
 
    /* Tertiary variant */
    .tertiary {
     background-color: transparent;
-    color: #333;
+    color: #224E4A;
     padding: 0.5rem 1rem;
     border-radius: 20px;
     border-color: transparent;
-    border: solid;
+    border: none;
     cursor: pointer;
     font-weight: 500;
     transition: background-color 0.2s;
+  }
+
+  .tertiary:hover {
+    background-color: #F3FDFA;
   }
