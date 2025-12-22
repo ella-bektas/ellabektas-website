@@ -1,49 +1,63 @@
 .primary {
-    background-color: #224E4A;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    border: solid;
-    cursor: pointer;
-    font-weight: 500;
-    transition: background-color 0.2s;
-    font-family: "Manrope", sans-serif;
-  }
-  
-  .primary:hover {
-    background-color: #245E5A;
-  }
-  
-  /* Secondary variant */
-  .secondary {
-    background-color: transparent;
-    color: #224E4A;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    border: solid;
-    cursor: pointer;
-    font-weight: 500;
-    transition: background-color 0.2s;
-  }
-  
-  .secondary:hover {
-    background-color: #F3FDFA;
-  }
+  background-color: #224E4A;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: solid;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  font-family: "Manrope", sans-serif;
 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px; 
+}
 
-   /* Tertiary variant */
-   .tertiary {
-    background-color: transparent;
-    color: #224E4A;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    border-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-weight: 500;
-    transition: background-color 0.2s;
-  }
+.primary:hover {
+  background-color: #245E5A;
+}
 
-  .tertiary:hover {
-    background-color: #F3FDFA;
-  }
+/* Secondary variant */
+.secondary {
+  background-color: transparent;
+  color: #224E4A;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: solid;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.secondary:hover {
+  background-color: #F3FDFA;
+}
+
+/* Tertiary variant */
+.tertiary {
+  background-color: transparent;
+  color: #224E4A;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.tertiary:hover {
+  background-color: #F3FDFA;
+}
