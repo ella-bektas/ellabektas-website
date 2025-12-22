@@ -4,25 +4,8 @@
 
 .tabsNav {
   display: flex;
-  gap: 8px;
+  gap: 10px;
   margin-bottom: 1rem;
-}
-
-.tabButton {
-  padding: 0.5rem 1rem;
-  background-color: #eaeaea;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-.tabButton:hover {
-  background-color: #dcdcdc;
-}
-
-.active {
-  background-color: #0070f3;
-  color: white;
 }
 
 .tabContent {

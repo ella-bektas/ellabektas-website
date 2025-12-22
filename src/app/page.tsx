@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import styles from "./page.module.css";
-import { Button } from './components/Button'
+import { Button } from './components/Button/Button'
 import Tabs from './components/Tab/Tab';
 
 
@@ -21,7 +21,7 @@ export default function Home() {
         />
 
         <Button>Click Me</Button>
-        <Tabs>
+<Tabs>
   <div title="Overview">
     <p>This is the overview tab.</p>
   </div>

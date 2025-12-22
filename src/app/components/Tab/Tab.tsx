@@ -2,6 +2,7 @@
 
 import { useState, ReactNode } from 'react'; 
 import styles from './Tabs.module.css';
+import { Button } from '../Button/Button';
 
 
 //Title defines the name of the tab
@@ -24,15 +25,13 @@ const Tabs = ({ children }: TabsProps) => {
     <div className={styles.tabs}>
       <div className={styles.tabsNav}>
         {tabs.map((child: any, index: number) => (
-          <button
+          <Button
             key={index}
             onClick={() => setActiveIndex(index)}
-            className={`${styles.tabButton} ${
-              index === activeIndex ? styles.active : ''
-            }`}
+            variant={index === activeIndex ? 'secondary' : 'tertiary'}
           >
             {child.props.title}
-          </button>
+          </Button>
         ))}
       </div>
 
