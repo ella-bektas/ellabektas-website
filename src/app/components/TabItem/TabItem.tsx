@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 import styles from './TabItem.module.css';
 import {Icons, IconName } from '@/app/icons';
 
-// Step 1 - Define the props and their types.
+// Step 1 - Define the props and their types & exp so can be used.
 export type TabItemProps = {
     title: string;
     onClick?: () => void;

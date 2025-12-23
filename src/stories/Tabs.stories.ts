@@ -1,29 +1,34 @@
+// Tabs.stories.ts
 import type { Meta, StoryObj } from '@storybook/nextjs-vite';
-import TabItem from '../app/components/TabItem/TabItem';
+import Tabs from '@/app/components/Tab/Tabs';
 import { Icons } from '@/app/icons';
+import type { TabItemProps } from '@/app/components/TabItem/TabItem';
 
 const meta = {
-  title: 'Atoms/TabItem',
-  component: TabItem,
+  title: 'Molecules/Tabs', // Changed title to avoid conflicts with TabItem
+  component: Tabs,
   tags: ['!autodocs'],
-  argTypes: {
-    iconLeft: {
-      control: { type: 'select' },
-      options: ['None', ...Object.keys(Icons)],
-    },
-  },
-} satisfies Meta<typeof TabItem>;
+} satisfies Meta<typeof Tabs>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Primary: Story = {
+export const Active: Story = {
   args: {
-    title: 'Tab item',
-    state: 'active',
-    onClick: () => alert('Clicked!'),
-    iconLeft: 'None',
-   
+    tabs: [
+      {
+        title: 'Tab 1',
+        state: 'active',
+        onClick: () => alert('Clicked Tab 1!'),
+        iconLeft: 'None',
+      } as TabItemProps,
+      {
+        title: 'Tab 2',
+        state: 'inactive',
+        onClick: () => alert('Clicked Tab 2!'),
+        iconLeft: 'None',
+      } as TabItemProps,
+    ],
   },
 };
