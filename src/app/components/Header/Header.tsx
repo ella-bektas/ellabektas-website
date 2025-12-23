@@ -14,12 +14,9 @@ type HeaderProps = {
 const Header = ({ tabs }: HeaderProps) => {
   return (
     <div className={styles.container}>
-    
       
-      <Image src={Logo} alt="Logo" width={120} height={20} />
+      <Image src={Logo} alt="Logo" width={120} height={40} />
       <Tabs tabs={tabs} />
-      
-
 
       
     </div>
