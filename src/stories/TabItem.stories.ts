@@ -3,7 +3,7 @@ import TabItem from '../app/components/TabItem/TabItem';
 import { Icons } from '@/app/icons';
 
 const meta = {
-  title: 'Atoms/TabItem',
+  title: 'Components/Tabs/TabItem',
   component: TabItem,
   tags: ['!autodocs'],
   argTypes: {

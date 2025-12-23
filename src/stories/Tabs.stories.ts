@@ -5,7 +5,7 @@ import { Icons } from '@/app/icons';
 import type { TabItemProps } from '@/app/components/TabItem/TabItem';
 
 const meta = {
-  title: 'Molecules/Tabs', // Changed title to avoid conflicts with TabItem
+  title: 'Components/Tabs/TabGroup', // Changed title to avoid conflicts with TabItem
   component: Tabs,
   tags: ['!autodocs'],
 } satisfies Meta<typeof Tabs>;
@@ -18,15 +18,21 @@ export const Active: Story = {
   args: {
     tabs: [
       {
-        title: 'Tab 1',
+        title: 'Home',
         state: 'active',
         onClick: () => alert('Clicked Tab 1!'),
+        iconLeft: 'Home',
+      } as TabItemProps,
+      {
+        title: 'About',
+        state: 'inactive',
+        onClick: () => alert('Clicked Tab 2!'),
         iconLeft: 'None',
       } as TabItemProps,
       {
-        title: 'Tab 2',
+        title: 'Contact',
         state: 'inactive',
-        onClick: () => alert('Clicked Tab 2!'),
+        onClick: () => alert('Clicked Tab 3!'),
         iconLeft: 'None',
       } as TabItemProps,
     ],
