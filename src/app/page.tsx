@@ -3,40 +3,35 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { Button } from './components/Button/Button'
-import Tabs from './components/Tab/Tabs';
-
-
-
+import Tabs from './components/Tabs/Tabs';
+import Header from './components/Header/Header';
+import { TabsProps } from '@/app/components/Tabs/Tabs';
 
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
+        
+      <Button iconLeft="Home" variant="primary">Click Me</Button>
 
-        <Button>Click Me</Button>
-
-      <Tabs
+    <Tabs
       tabs={[
         { title: "Home", state: "active", iconLeft: "Home" },
         { title: "Profile", state: "inactive", iconLeft: "User", onClick: () => alert("Profile clicked") },
         { title: "Settings", state: "inactive", iconLeft: "Settings" },
       ]}
     />
+
+<Header
+        tabs={[
+          { title: 'Home', state: 'active', iconLeft: 'Home', onClick: () => console.log('Home clicked') },
+          { title: 'Profile', state: 'inactive', iconLeft: 'User', onClick: () => console.log('Profile clicked') },
+          { title: 'Settings', state: 'inactive', iconLeft: 'Settings', onClick: () => console.log('Settings clicked') },
+        ]}
+      />
     
 
-        
-
-
-        <Button iconLeft="Home" variant="primary">Click Me</Button>
         <div className={styles.intro}>
           <h1>To get started, edit the page.tsx file.</h1>
           <p>

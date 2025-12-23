@@ -1,6 +1,6 @@
 // Tabs.stories.ts
 import type { Meta, StoryObj } from '@storybook/nextjs-vite';
-import Tabs from '@/app/components/Tab/Tabs';
+import Tabs from '@/app/components/Tabs/Tabs';
 import { Icons } from '@/app/icons';
 import type { TabItemProps } from '@/app/components/TabItem/TabItem';
 

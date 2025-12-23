@@ -5,9 +5,10 @@
 .tabsNav {
   display: flex;
   gap: 10px;
-  margin-bottom: 1rem;
+
 }
 
 .tabContent {
-  margin-top: 1rem;
+  
+
 }
