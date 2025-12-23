@@ -3,13 +3,8 @@
 import { useState, ReactNode } from 'react'; 
 import styles from './Tabs.module.css';
 import { Button } from '../Button/Button';
+import { Icons, IconName } from "@/app/icons";
 
-
-//Title defines the name of the tab
-interface TabProps {
-  title: string;
-  children: ReactNode; // content in tab can be anything
-}
 
 interface TabsProps {
   children: ReactNode;
@@ -18,10 +13,11 @@ interface TabsProps {
 const Tabs = ({ children }: TabsProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  // children into an array
-  const tabs = Array.isArray(children) ? children : [children];
+ const tabs = Array.isArray(children) ? children : [children];
 
-  return (
+// Ella's note - Can pass different buttons or do custom in css module
+ 
+return (
     <div className={styles.tabs}>
       <div className={styles.tabsNav}>
         {tabs.map((child: any, index: number) => (
@@ -29,6 +25,7 @@ const Tabs = ({ children }: TabsProps) => {
             key={index}
             onClick={() => setActiveIndex(index)}
             variant={index === activeIndex ? 'secondary' : 'tertiary'}
+            iconLeft={child.props.iconLeft}
           >
             {child.props.title}
           </Button>

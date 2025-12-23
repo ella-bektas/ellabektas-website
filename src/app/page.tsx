@@ -7,6 +7,7 @@ import Tabs from './components/Tab/Tab';
 
 
 
+
 export default function Home() {
   return (
     <div className={styles.page}>
@@ -22,15 +23,15 @@ export default function Home() {
 
         <Button>Click Me</Button>
 <Tabs>
-  <div title="Overview">
-    <p>This is the overview tab.</p>
-  </div>
-
-  <div title="Details">
+<div title="Home">
     <p>This is the details tab.</p>
   </div>
 
-  <div title="Settings">
+  <div title="About">
+    <p>This is the details tab.</p>
+  </div>
+
+  <div title="Social">
     <p>This is the settings tab.</p>
   </div>
 </Tabs>
