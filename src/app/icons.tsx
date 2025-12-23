@@ -1,10 +1,14 @@
-import { AiFillHome, AiOutlineUser, AiOutlineSetting } from "react-icons/ai";
+import { AiFillHome, AiOutlineHome, AiOutlineUser, AiOutlineSetting, AiOutlineYoutube} from "react-icons/ai";
+import { FaYoutube } from "react-icons/fa";
 
 export const Icons = {
   None: undefined, 
-  Home: AiFillHome,
+  HomeFill: AiFillHome,
+  HomeOutline: AiOutlineHome,
   User: AiOutlineUser,
   Settings: AiOutlineSetting,
+  YoutubeFill: FaYoutube,
+  YoutubeOutline: AiOutlineYoutube,
 };
 
 export type IconName = keyof typeof Icons;

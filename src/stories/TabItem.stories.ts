@@ -21,7 +21,7 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     title: 'Tab item',
-    state: 'active',
+    isActive: true,
     onClick: () => alert('Clicked!'),
     iconLeft: 'None',
    

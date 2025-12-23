@@ -1,11 +1,9 @@
-// Tabs.stories.ts
 import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 import Tabs from '@/app/components/Tabs/Tabs';
-import { Icons } from '@/app/icons';
 import type { TabItemProps } from '@/app/components/TabItem/TabItem';
 
 const meta = {
-  title: 'Components/Tabs/TabGroup', // Changed title to avoid conflicts with TabItem
+  title: 'Components/Tabs/TabGroup',
   component: Tabs,
   tags: ['!autodocs'],
 } satisfies Meta<typeof Tabs>;
@@ -19,22 +17,22 @@ export const Active: Story = {
     tabs: [
       {
         title: 'Home',
-        state: 'active',
+        href: '/',
         onClick: () => alert('Clicked Tab 1!'),
-        iconLeft: 'Home',
-      } as TabItemProps,
+        iconLeft: 'HomeOutline',
+      },
       {
         title: 'About',
-        state: 'inactive',
+        href: '/about',
         onClick: () => alert('Clicked Tab 2!'),
-        iconLeft: 'None',
-      } as TabItemProps,
+        iconLeft: undefined, // no icon
+      },
       {
         title: 'Contact',
-        state: 'inactive',
+        href: '/contact',
         onClick: () => alert('Clicked Tab 3!'),
-        iconLeft: 'None',
-      } as TabItemProps,
+        iconLeft: undefined,
+      },
     ],
   },
 };

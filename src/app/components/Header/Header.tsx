@@ -7,9 +7,9 @@ import Tabs from '@/app/components/Tabs/Tabs';
 import { TabItemProps } from '@/app/components/TabItem/TabItem';
 import Logo from '@/app/components/eblogo.svg';
 
-type HeaderProps = {        
-  tabs: TabItemProps[];     
-}
+type HeaderProps = {
+  tabs: Omit<TabItemProps, 'isActive'>[];
+};
 
 const Header = ({ tabs }: HeaderProps) => {
   return (

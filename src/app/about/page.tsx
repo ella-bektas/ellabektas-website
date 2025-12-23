@@ -1,16 +1,6 @@
-import "../page.module.css";
-import Link from 'next/link'
-
 const About = () => {
 	return (
-        <main>
-    <Link href="/" replace>
-      Dashboard
-    </Link>
-    <div>Hello</div>
-        </main>
-
-
+        <p> This will be the about page.</p>
 
 		)
 	} 
