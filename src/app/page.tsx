@@ -1,6 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./page.module.css";
-import { Button } from './components/Button'
+import { Button } from './components/Button/Button'
+import Tabs from './components/Tab/Tabs';
+
+
+
 
 
 export default function Home() {
@@ -17,6 +23,19 @@ export default function Home() {
         />
 
         <Button>Click Me</Button>
+
+      <Tabs
+      tabs={[
+        { title: "Home", state: "active", iconLeft: "Home" },
+        { title: "Profile", state: "inactive", iconLeft: "User", onClick: () => alert("Profile clicked") },
+        { title: "Settings", state: "inactive", iconLeft: "Settings" },
+      ]}
+    />
+    
+
+        
+
+
         <Button iconLeft="Home" variant="primary">Click Me</Button>
         <div className={styles.intro}>
           <h1>To get started, edit the page.tsx file.</h1>

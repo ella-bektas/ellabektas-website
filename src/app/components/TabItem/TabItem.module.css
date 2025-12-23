@@ -1,0 +1,41 @@
+/* Active state */
+
+.active {
+  background-color: #F5F5F5;
+  color: #1B1917;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  font-family: "Manrope", sans-serif;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5em; 
+}
+
+
+
+/* Inactive state */
+.inactive {
+  background-color: transparent;
+  color: #44403C;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5em;
+}
+
+.inactive:hover {
+  background-color: #FAFAFA;
+}
