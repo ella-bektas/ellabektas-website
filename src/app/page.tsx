@@ -3,7 +3,8 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { Button } from './components/Button/Button'
-import Tabs from './components/Tab/Tab';
+import Tabs from './components/Tab/Tabs';
+
 
 
 
@@ -22,19 +23,18 @@ export default function Home() {
         />
 
         <Button>Click Me</Button>
-<Tabs>
-<div title="Home">
-    <p>This is the details tab.</p>
-  </div>
 
-  <div title="About">
-    <p>This is the details tab.</p>
-  </div>
+      <Tabs
+      tabs={[
+        { title: "Home", state: "active", iconLeft: "Home" },
+        { title: "Profile", state: "inactive", iconLeft: "User", onClick: () => alert("Profile clicked") },
+        { title: "Settings", state: "inactive", iconLeft: "Settings" },
+      ]}
+    />
+    
 
-  <div title="Social">
-    <p>This is the settings tab.</p>
-  </div>
-</Tabs>
+        
+
 
         <Button iconLeft="Home" variant="primary">Click Me</Button>
         <div className={styles.intro}>
