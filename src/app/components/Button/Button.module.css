@@ -8,11 +8,13 @@
   font-weight: 500;
   transition: background-color 0.2s;
   font-family: "Manrope", sans-serif;
+  font-size: 16px;
 
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: .5em; 
+  height: 100%;
 }
 
 .primary:hover {
@@ -26,14 +28,17 @@
   padding: 0.5rem 1rem;
   border-radius: 20px;
   border: solid;
+  border-color: #A6A09C;
   cursor: pointer;
   font-weight: 500;
   transition: background-color 0.2s;
+  font-size: 16px;
 
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: .5em;
+  height: 100%;
 }
 
 .secondary:hover {

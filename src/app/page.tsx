@@ -21,8 +21,12 @@ export default function Home() {
           </p>
         </div>
         <div className={styles.ctas}>
-        <Button iconLeft="HomeOutline" variant="primary">My work</Button>
-        <Button iconLeft="HomeOutline" variant="secondary">About</Button>
+        <Button iconLeft="Portfolio" variant="primary">Portfolio</Button>
+
+        <Link href="/about"> 
+        <Button iconLeft="User" variant="secondary">About</Button>
+        </Link>
+        
         </div>
       
     </div>

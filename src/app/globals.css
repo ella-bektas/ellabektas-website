@@ -23,21 +23,19 @@ body {
   max-width: 80vw;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
+  gap: 15vh;
   background-color: var(--foreground);
-  padding: 120px 60px;
+  padding: 15vh 6vw;
 }
 
 .page {
   --background: #fafafa;
   --foreground: #fff;
 
-  --text-primary: #000;
-  --text-secondary: #666;
+  --text-primary: #1B1917;
+  --text-secondary: #44403C;
   font-family: "Manrope", sans-serif;
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-  --button-secondary-border: #ebebeb;
+ 
 
   display: flex;
   min-height: 100vh;
