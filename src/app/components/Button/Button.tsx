@@ -1,11 +1,11 @@
 'use client'
 
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import styles from './Button.module.css';
 import { Icons, IconName } from "@/app/icons";
 
 type ButtonProps = {
-  children: ReactNode;
+  children?: ReactNode;
   variant?: 'primary' | 'secondary' | 'tertiary';
   onClick?: () => void;
   iconLeft?: IconName; 
@@ -27,3 +27,4 @@ export const Button = ({ children, variant = 'primary', onClick, iconLeft, iconR
     </button>
   );
 }
+
