@@ -6,7 +6,7 @@ import { Icons, IconName } from "@/app/icons";
 
 type ButtonProps = {
   children?: ReactNode;
-  variant?: 'primary' | 'secondary' | 'tertiary';
+  variant?: 'primary' | 'secondary' | 'tertiary' | 'link';
   onClick?: () => void;
   iconLeft?: IconName; 
   iconRight?: IconName;

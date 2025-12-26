@@ -7,3 +7,8 @@
     height: 20vh;
              
 }
+
+.ctas {
+    display: flex;
+    gap: 10px;
+}
