@@ -12,7 +12,6 @@ export default function Home() {
   return (
     <div>
     
-    
         <div className={styles.intro}>
           <h1>Hello, Welcome!</h1>
           <p>
@@ -22,12 +21,11 @@ export default function Home() {
         </div>
         <div className={styles.ctas}>
         <Button iconLeft="Portfolio" variant="primary">Portfolio</Button>
-
         <Link href="/about"> 
         <Button iconLeft="User" variant="secondary">About</Button>
         </Link>
-        
         </div>
+        
       
     </div>
   );

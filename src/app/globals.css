@@ -18,14 +18,25 @@ body {
 
 .main {
   display: flex;
+  justify-content: space-between;
   min-height: 100vh;
-  width: 100%;
-  max-width: 80vw;
+  width: 80vw;
+  
   flex-direction: column;
   align-items: flex-start;
-  gap: 15vh;
   background-color: var(--foreground);
-  padding: 15vh 6vw;
+
+}
+
+.page-content {
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  width: 100%;
+  height: 100%;
+
+
 }
 
 .page {
@@ -36,7 +47,6 @@ body {
   --text-secondary: #44403C;
   font-family: "Manrope", sans-serif;
  
-
   display: flex;
   min-height: 100vh;
   align-items: center;

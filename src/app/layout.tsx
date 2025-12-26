@@ -27,7 +27,10 @@ export default function RootLayout({
       { href: '/videos', title: 'Videos', iconLeft: 'YoutubeOutline' },
        ]}
       />
+      <div className="page-content">
       {children}
+      </div>
+      
 
       <Footer> 
        {}
