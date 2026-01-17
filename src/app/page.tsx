@@ -13,9 +13,9 @@ export default function Home() {
     <div>
     
         <div className={styles.intro}>
-          <h1>Hello, Welcome!</h1>
+          <h1>Hi, I'm Ella!</h1>
           <p>
-          Hi! I’m a User Experience Designer at Gearset.  I’ve been designing, trying and testing great tech products professionally for over 3 years.
+          A User Experience Designer at Gearset who has been designing, trying and testing great tech products professionally for over 3 years.
           
           </p>
         </div>
