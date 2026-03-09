@@ -1,12 +1,14 @@
 'use client';
 
 import "./globals.css";
-import { Manrope } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import Header from '@/app/components/Header/Header';
 import Footer from '@/app/components/Footer/Footer';
 
-const manrope = Manrope({
+const poppins = Poppins({
+  weight: ['400', '500', '600', '700'],
   subsets: ['latin'],
+  variable: '--font-poppins',
 });
 
 export default function RootLayout({
@@ -17,7 +19,7 @@ export default function RootLayout({
  
 
   return (
-    <html lang="en" className={manrope.className}>
+    <html lang="en" className={poppins.className}>
       <body>
       <div className= "page">
       <main className= "main">

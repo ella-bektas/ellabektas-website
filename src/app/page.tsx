@@ -2,29 +2,42 @@
 
 import styles from "./page.module.css";
 import { Button } from './components/Button/Button'
-import Tabs from './components/Tabs/Tabs';
-import Header from './components/Header/Header';
-import { TabsProps } from '@/app/components/Tabs/Tabs';
 import Link from 'next/link'
+import Image from 'next/image'
+
+
 
 
 export default function Home() {
   return (
     <div>
-    
-        <div className={styles.intro}>
+      <div> 
+      <div className={`${styles.single} ${styles.centered}`}>
+        <Image
+          src="/coverImage.png"
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: 'auto', height: '40vh' }}
+          alt="Cover image"
+    />
           <h1>Hi, I'm Ella!</h1>
-          <p>
-          A User Experience Designer at Gearset who has been designing, trying and testing great tech products professionally for over 3 years.
-          
-          </p>
-        </div>
-        <div className={styles.ctas}>
+          <p>I make complex tech simple to use.</p>
+                  <div className={styles.ctas}>
         <Button iconLeft="Portfolio" variant="primary">Portfolio</Button>
         <Link href="/about"> 
         <Button iconLeft="User" variant="secondary">About</Button>
         </Link>
         </div>
+       
+        </div>
+
+      </div>
+
+
+
+    
+       
         
       
     </div>
