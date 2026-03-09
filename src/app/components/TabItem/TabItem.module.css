@@ -1,20 +1,20 @@
 /* Active state */
 
 .active {
-  background-color: #F5F5F5;
-  color: #1B1917;
+  background-color: #F2E8E3;
+  color: var(--text-primary);
   padding: 0.5rem 1rem;
   border-radius: 10px;
   border: none;
   cursor: pointer;
   font-weight: 500;
   transition: background-color 0.2s;
-  font-family: "Manrope", sans-serif;
-
+  font-family: "Poppins", sans-serif;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: .5em; 
+  font-size: 20px;
 }
 
 
@@ -29,13 +29,13 @@
   cursor: pointer;
   font-weight: 500;
   transition: background-color 0.2s;
-
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: .5em;
+  font-size: 20px;
 }
 
 .inactive:hover {
-  background-color: #FAFAFA;
+  background-color: #F7F1EE;
 }

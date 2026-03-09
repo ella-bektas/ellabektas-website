@@ -17,7 +17,6 @@
 .double {
   border: solid;
   color:red;
-
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
@@ -62,25 +61,40 @@
   display: flex;
   gap: 10px;
   padding-top: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .single {
   display: grid;
   column-count: 1;
   justify-content: center;
-  padding-top: 20vh;
   padding-left: 10vw;
   padding-right: 10vw;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  gap: 2em;
+  background-color: #FDFBFB;
+  
 
 }
 
 .single h1 {
-  font-size: 40px;
-  font-weight: 600;
+  font-size: 52px;
+  font-weight: 500;
   line-height: 48px;
   letter-spacing: -2.4px;
   text-wrap: balance;
   color: var(--text-primary);
 }
 
+.single p {
+  font-size: 18px;
+  color: #646469;
+}
 
+
+.centered {
+  text-align: center;
+}
+  
