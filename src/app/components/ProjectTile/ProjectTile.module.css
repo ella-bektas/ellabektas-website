@@ -1,11 +1,25 @@
+.container {
+    display: grid;
+     grid-template-columns: 2fr;
+     justify-items:start ;
+     width: 30vw;
+     text-align: start ;
+         
+}
+
 .date {
     font-size: 16px;
     color: var(--text-secondary);
 }
 
+.image {
+    background-color: aqua;
+    height: 100%;
+}
 
 .header {
     font-size: 40px ;
+    font-weight: 600;
     color: var(--text-primary);
 }
 
@@ -14,6 +28,11 @@
   border-radius: 8px;
   padding: 16px;
   height: 200px;
-  border: solid;
+  border: solid 1px;
   border-color: #EDE1DB;
+  width: 100%;
+}
+
+.container p {
+    font-size: 16px;
 }

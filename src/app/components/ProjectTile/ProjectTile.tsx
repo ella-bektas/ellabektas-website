@@ -13,12 +13,11 @@ const ProjectTile = ({ date, title, image, description }: ProjectTileProps) => {
   return (
     <div className={styles.container}>
 
-     <div className={styles.imageContainer}>
-  {image && <img className={styles.image} src={image} alt={title} />}
-</div>
-<p>{date}</p>
-
-      <div className={styles.heafer}>{title}</div>
+      <div className={styles.imageContainer}>
+      {image && <img className={styles.image} src={image} alt={title} />}
+      </div>
+      <p>{date}</p>
+      <div className={styles.header}>{title}</div>
       <p>{description}</p>
     </div>
   );
