@@ -7,7 +7,7 @@
 }
 
 .p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 32px;
   text-wrap: balance;
   color: var(--text-secondary);
@@ -50,7 +50,7 @@
 }
 
 .intro p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 32px;
   text-wrap: balance;
   color: var(--text-secondary);
@@ -60,7 +60,7 @@
 .ctas {
   display: flex;
   gap: 10px;
-  padding-top: 20px;
+  padding-top: 16px;
   align-items: center;
   justify-content: center;
 }
@@ -89,7 +89,7 @@
 }
 
 .single p {
-  font-size: 18px;
+  font-size: 16px;
   color: #646469;
 }
 

@@ -1,7 +1,7 @@
 /* Active state */
 
 .active {
-  background-color: #F2E8E3;
+  background-color: #FBF9F8;
   color: var(--text-primary);
   padding: 0.5rem 1rem;
   border-radius: 10px;
@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: center;
   gap: .5em; 
-  font-size: 20px;
+  font-size: 16px;
 }
 
 
@@ -22,7 +22,7 @@
 /* Inactive state */
 .inactive {
   background-color: transparent;
-  color: #44403C;
+  color: var(--text-secondary);
   padding: 0.5rem 1rem;
   border-radius: 10px;
   border: none;
@@ -33,9 +33,9 @@
   align-items: center;
   justify-content: center;
   gap: .5em;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .inactive:hover {
-  background-color: #F7F1EE;
+  background-color: #FBF9F8;
 }

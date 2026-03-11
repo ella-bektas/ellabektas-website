@@ -1,0 +1,19 @@
+.date {
+    font-size: 16px;
+    color: var(--text-secondary);
+}
+
+
+.header {
+    font-size: 40px ;
+    color: var(--text-primary);
+}
+
+.imageContainer {
+  background-color: #FBF9F8;
+  border-radius: 8px;
+  padding: 16px;
+  height: 200px;
+  border: solid;
+  border-color: #EDE1DB;
+}
