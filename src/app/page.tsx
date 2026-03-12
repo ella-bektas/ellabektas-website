@@ -34,19 +34,14 @@ export default function Home() {
     title="Gitflow for CI/CD"
     image="/images/project.png"
     description="Introducing a new Gitflow branching strategy into our continuous delivery product."
+     href="/about"
   />
     <ProjectTile
     date="2026"
     title="Gitflow for CI/CD"
     image="/images/project.png"
     description="Introducing a new Gitflow branching strategy into our continuous delivery product."
-  />
-
-    <ProjectTile
-    date="2026"
-    title="Gitflow for CI/CD"
-    image="/images/project.png"
-    description="Introducing a new Gitflow branching strategy into our continuous delivery product."
+     href="/about"
   />
 
     <ProjectTile
@@ -54,6 +49,15 @@ export default function Home() {
     title="Gitflow for CI/CD"
     image="/images/project.png"
     description="Introducing a new Gitflow branching strategy into our continuous delivery product."
+     href="/about"
+  />
+
+    <ProjectTile
+    date="2026"
+    title="Gitflow for CI/CD"
+    image="/images/project.png"
+    description="Introducing a new Gitflow branching strategy into our continuous delivery product."
+     href="/about"
   />
 
   
