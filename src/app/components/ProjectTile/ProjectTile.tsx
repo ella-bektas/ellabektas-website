@@ -17,7 +17,7 @@ const ProjectTile = ({ date, title, image, description, href }: ProjectTileProps
       <div className={styles.imageContainer}>
         {image && <img className={styles.image} src={image} alt={title} />}
       </div>
-      <p>{date}</p>
+      <div className={styles.date}>{date}</div>
       <div className={styles.header}>{title}</div>
       <p>{description}</p>
     </Link>
