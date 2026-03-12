@@ -1,8 +1,9 @@
 .container {
-     justify-items:start ;
+     display: block;
+     justify-items: start;
      max-width: 30vw;
-     text-align: start ;
-         
+     text-align: start;
+    cursor: pointer;
 }
 
 .date {
@@ -20,7 +21,6 @@
     font-weight: 600;
     color: var(--text-primary);
 }
-
 .imageContainer {
   background-color: #FBF9F8;
   border-radius: 8px;
@@ -29,8 +29,14 @@
   border: solid 1px;
   border-color: #EDE1DB;
   width: 100%;
+ transition: box-shadow 0.3s ease;
 }
 
+.imageContainer:hover {
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+ 
+ 
+}
 .container p {
     font-size: 16px;
 }
