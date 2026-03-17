@@ -1,46 +1,7 @@
-.h1 {
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 48px;
-  text-wrap: balance;
-  color: var(--text-primary);
-}
+/* Typography */
 
-.p {
-  font-size: 18px;
-  line-height: 32px;
-  text-wrap: balance;
-  color: var(--text-secondary);
-
-}
-
-.double {
-  border: solid;
-  color:red;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-}
-
-.container {
-  border: solid;
-  color: blue;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1em;
-}
-
-
-.intro {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  gap: 24px;
-}
 
 .intro h1 {
-  width: 100%;
   font-size: 40px;
   font-weight: 600;
   line-height: 48px;
@@ -50,34 +11,22 @@
 }
 
 .intro p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 32px;
   text-wrap: balance;
   color: var(--text-secondary);
 }
-
-
-.ctas {
-  display: flex;
-  gap: 10px;
-  padding-top: 20px;
-  align-items: center;
-  justify-content: center;
-}
-
+/* Layout */
 .single {
-  display: grid;
-  column-count: 1;
-  justify-content: center;
-  padding-left: 10vw;
-  padding-right: 10vw;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10vh 10vw;
   gap: 2em;
-  background-color: #FDFBFB;
-  
-
+  display: flex;
+  flex-direction: column;
+  background-color: white;
 }
+
 
 .single h1 {
   font-size: 52px;
@@ -90,11 +39,22 @@
 
 .single p {
   font-size: 18px;
-  color: #646469;
+  color: var(--text-secondary)
 }
-
 
 .centered {
+  align-items: center;
   text-align: center;
 }
-  
+
+
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4em;
+  width: 100%;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
