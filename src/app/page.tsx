@@ -26,9 +26,9 @@ export default function Home() {
     <ProjectTile
     date="2026"
     title="Gitflow for CI/CD"
-    image="/images/project.png"
+    image="/images/gitflow-hero.png"
     description="Introducing a new Gitflow branching strategy into our continuous delivery product."
-     href="/"
+    href="/"
   />
     <ProjectTile
     date="2025"
