@@ -38,6 +38,7 @@ export default function Home() {
      href="/"
 
   />
+  {/* 
     <ProjectTile
     date="2025"
     title="Agentforce testing suite"
@@ -53,7 +54,7 @@ export default function Home() {
     description="Supporting a modular approach to developing Salesforce orgs, when metadata is shared."
      href="/about"
   />
-
+*/}
   </div>
 
 
