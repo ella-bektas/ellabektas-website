@@ -1,22 +1,16 @@
 const About = () => {
 	return (
 		<main>
-			<p>
-				This will be the about page.
 
-			</p>
-			<p> 
+		  <h1>About</h1>
+          <p>I'm someone who loves designing user-friendly solutions to complex tehcnical challenges. Day to day I work in the SaaS space and am currently working in the DevOps space. At my core I am a product person. I love figuring out the root of a problem and using design to build a solution that helps people get the job done.
+		  </p>
+    
+		<p>
+			I love to learn and share those learnings with others.
 		
-
-			I’ve been working professionally as a User Experience Designer for just over 3 years, not including the years at university where I studies Design. 
-
-I care about learning, and every day I want to learn something new. Over the past few years my perspective on the design has shaped into an approach which values getting value into customers hands. 
-
-For me being good designer isn’t just about making an interface appealing. Its about facilitating your team and solving problems together. Each day working with engineers and product managers. 
-
-Analytics are important to me. But how you use them is more important. Its all well and good being able to track traffic to a part of your project, but what does that tell you about the value to the user? I use analyics in several ways, but my favourite is to recruit users to talk to. Using analytics to find interesting behaviour and then talking to those users means we cn get to answers quicker and build solutions quicker than of course give our customers value quicker.
 		</p>
-
+		
 		</main>
 
 		)
