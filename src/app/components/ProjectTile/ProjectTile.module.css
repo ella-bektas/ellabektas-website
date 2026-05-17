@@ -58,3 +58,10 @@ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 .center {
     align-items: center;
 }
+
+@media (min-width:576px) {
+    .imageContainer {
+  height: 100vh;
+}
+    
+}
