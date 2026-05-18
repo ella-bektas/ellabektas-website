@@ -5,6 +5,9 @@ import { Poppins } from 'next/font/google';
 import Header from '@/app/components/Header/Header';
 import Footer from '@/app/components/Footer/Footer';
 
+
+
+
 const poppins = Poppins({
   weight: ['400', '500', '600', '700'],
   subsets: ['latin'],
@@ -20,6 +23,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" className={poppins.className}>
+  
       <body>
       <div className= "page">
       <main className= "main">

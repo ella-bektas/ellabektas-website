@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[10162,["/ellabektas-website/_next/static/chunks/1aa8265ae7a2fc3b.js","/ellabektas-website/_next/static/chunks/c121d9917aa4de4c.js"],"Button"]
+3:I[97367,["/ellabektas-website/_next/static/chunks/ff1a16fafef87110.js","/ellabektas-website/_next/static/chunks/7340adf74ff47ec0.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"buildId":"XLprg4YiuHep4EmhxWv1H","rsc":["$","$1","c",{"children":[["$","main",null,{"children":[["$","p",null,{"children":" This will be a page to post talk videos"}],["$","p",null,{"children":" Woaa"}],["$","$L2",null,{"children":"Click me"}],["$","$L2",null,{"children":"Click me"}],["$","$L2",null,{"variant":"secondary","children":"Click me"}]]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+5:null
