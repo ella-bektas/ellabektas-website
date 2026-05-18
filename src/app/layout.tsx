@@ -25,7 +25,6 @@ export default function RootLayout({
       <main className= "main">
       <Header tabs={[
       { href: '/', title: 'Home', iconLeft: 'HomeOutline' },
-      { href: '/about', title: 'About', iconLeft: 'User' },
        ]}
       />
       <div className="page-content">
