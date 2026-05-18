@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import "./globals.css";
 import { Poppins } from 'next/font/google';
@@ -26,7 +26,6 @@ export default function RootLayout({
       <Header tabs={[
       { href: '/', title: 'Home', iconLeft: 'HomeOutline' },
       { href: '/about', title: 'About', iconLeft: 'User' },
-      { href: '/videos', title: 'Videos', iconLeft: 'YoutubeOutline' },
        ]}
       />
       <div className="page-content">
