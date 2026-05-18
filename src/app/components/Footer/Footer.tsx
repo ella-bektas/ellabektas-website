@@ -17,6 +17,13 @@ const Footer = () => {
         <Link href="https://github.com/ella-bektas">
         <Button iconLeft="Github" variant="link">Github</Button>
         </Link>
+                <Link href="https://www.tiktok.com/@deswithella?is_from_webapp=1&sender_device=pc">
+        <Button iconLeft="TikTok" variant="link">TikTok</Button>
+        </Link>
+
+        <Link href="https://www.youtube.com/@deswithella">
+        <Button iconLeft="YoutubeOutline" variant="link">Youtube</Button>
+        </Link>
         
         </div>
          </div>

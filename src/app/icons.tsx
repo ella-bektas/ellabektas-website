@@ -1,4 +1,4 @@
-import { AiOutlineGithub, AiOutlineLinkedin, AiFillHome, AiOutlineHome, AiOutlineUser, AiOutlineFolder, AiOutlineSetting, AiOutlineYoutube} from "react-icons/ai";
+import { AiOutlineTikTok, AiOutlineGithub, AiOutlineLinkedin, AiFillHome, AiOutlineHome, AiOutlineUser, AiOutlineFolder, AiOutlineSetting, AiOutlineYoutube} from "react-icons/ai";
 import { FaYoutube } from "react-icons/fa";
 
 export const Icons = {
@@ -12,6 +12,8 @@ export const Icons = {
   Portfolio: AiOutlineFolder,
   Linkedin: AiOutlineLinkedin,
   Github: AiOutlineGithub,
+  TikTok: AiOutlineTikTok,
+
 };
 
 export type IconName = keyof typeof Icons;
