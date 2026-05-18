@@ -26,14 +26,14 @@ export default function Home() {
     <ProjectTile
     date="2026"
     title="Gitflow for CI/CD"
-    image="/images/gitflow-hero.png"
+    image="./images/gitflow-hero.png"
     description="Introducing a new Gitflow branching strategy into our continuous delivery product."
     href="/"
   />
     <ProjectTile
     date="2025"
     title="DORA metrics for CI pipelines"
-    image="/images/dora-hero.png"
+    image="./images/dora-hero.png"
     description="Enabling automation teams to track and improve DevOps performance."
      href="/"
 
