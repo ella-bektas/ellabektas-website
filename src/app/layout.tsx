@@ -24,8 +24,8 @@ export default function RootLayout({
 
   return (
     <html lang="en" className={poppins.className}>
-      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || "G-WYW1D4WQDN"} />
       <body>
+      <GoogleAnalytics gaId="G-WYW1D4WQDN" />
       <div className= "page">
       <main className= "main">
       <Header tabs={[
