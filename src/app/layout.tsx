@@ -4,6 +4,7 @@ import "./globals.css";
 import { Poppins } from 'next/font/google';
 import Header from '@/app/components/Header/Header';
 import Footer from '@/app/components/Footer/Footer';
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 
 
@@ -23,12 +24,13 @@ export default function RootLayout({
 
   return (
     <html lang="en" className={poppins.className}>
-  
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ""} />
       <body>
       <div className= "page">
       <main className= "main">
       <Header tabs={[
       { href: '/', title: 'Home', iconLeft: 'HomeOutline' },
+      { href: '/about', title: 'About', iconLeft: 'User' },
        ]}
       />
       <div className="page-content">
