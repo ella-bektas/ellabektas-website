@@ -1,0 +1,23 @@
+.bodyText {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.s {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.m {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.l {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.bold { font-weight: 700; }
+
+.regular { font-weight: 400; }
