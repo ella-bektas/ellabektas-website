@@ -11,10 +11,16 @@ type PageSectionProps = {
   align?: 'start' | 'center';
 };
 
+const paddingTopClass = { s: styles.paddingTopS, m: styles.paddingTopM, l: styles.paddingTopL };
+const paddingBottomClass = { s: styles.paddingBottomS, m: styles.paddingBottomM, l: styles.paddingBottomL };
+
 export const PageSection = ({ children, paddingTop, paddingBottom, backgroundColor, direction = 'vertical', align = 'start' }: PageSectionProps) => {
+  const ptClass = paddingTop ? paddingTopClass[paddingTop] : '';
+  const pbClass = paddingBottom ? paddingBottomClass[paddingBottom] : '';
+
   return (
     <div className={`${styles.container} ${styles[backgroundColor]}`}>
-      <div className={`${styles.content} ${styles[direction]} ${styles[align]}`}>{children}</div>
+      <div className={`${styles.content} ${styles[direction]} ${styles[align]} ${ptClass} ${pbClass}`}>{children}</div>
     </div>
   );
 };

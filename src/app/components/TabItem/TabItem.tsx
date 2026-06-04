@@ -3,6 +3,7 @@
 import styles from './TabItem.module.css';
 import { Icons, IconName } from '@/app/icons';
 import Link from 'next/link';
+import BodyText from '@/app/components/Typography/BodyText';
 
 export type TabItemProps = {
   title: string;
@@ -28,7 +29,7 @@ const TabItem = ({
   const content = (
     <>
       {LeftIcon && <LeftIcon />}
-      {title}
+      <BodyText as="span" size="m">{title}</BodyText>
     </>
   );
 

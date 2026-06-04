@@ -18,7 +18,7 @@ const About = () => {
 						I care about the whole problem, not just the interface. I build products where user problems drive every decision.
 					</BodyText>
 					<Stack direction="horizontal" gap="s">
-						<Button>Connect</Button>
+						<Link href="https://www.linkedin.com/in/ella-bektas-2111061a9" target="_blank" rel="noopener noreferrer"><Button iconLeft="Linkedin">Connect</Button></Link>
 						<Link href="/"><Button variant="secondary">See my work</Button></Link>
 					</Stack>
 				</Stack>

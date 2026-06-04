@@ -4,13 +4,14 @@ import styles from "./Typography.module.css";
 interface BodyTextProps {
   size?: string;
   weight?: string;
+  as?: 'p' | 'span' | 'div';
   children: ReactNode;
 }
 
-export default function BodyText({ size = 'm', weight = 'regular', children }: BodyTextProps) {
+export default function BodyText({ size = 'm', weight = 'regular', as: Tag = 'p', children }: BodyTextProps) {
   return (
-    <p className={`${styles[size]} ${styles[weight]}`}>
+    <Tag className={`${styles[size]} ${styles[weight]}`}>
       {children}
-    </p>
+    </Tag>
   )
 }

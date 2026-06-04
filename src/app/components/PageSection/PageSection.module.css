@@ -27,7 +27,12 @@
 .horizontal {
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+    .horizontal {
+        flex-direction: column;
+    }
 }
 
 .start {
@@ -39,3 +44,11 @@
     align-items: center;
     text-align: center;
 }
+
+.paddingTopS  { padding-top: 4vh; }
+.paddingTopM  { padding-top: 8vh; }
+.paddingTopL  { padding-top: 14vh; }
+
+.paddingBottomS { padding-bottom: 4vh; }
+.paddingBottomM { padding-bottom: 8vh; }
+.paddingBottomL { padding-bottom: 14vh; }

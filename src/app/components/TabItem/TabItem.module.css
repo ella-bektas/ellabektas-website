@@ -7,14 +7,11 @@
   border-radius: 10px;
   border: none;
   cursor: pointer;
-  font-weight: 500;
   transition: background-color 0.2s;
-  font-family: "Poppins", sans-serif;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: .5em; 
-  font-size: 18px;
+  gap: .5em;
 }
 
 
@@ -27,13 +24,11 @@
   border-radius: 10px;
   border: none;
   cursor: pointer;
-  font-weight: 500;
   transition: background-color 0.2s;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: .5em;
-  font-size: 18px;
 }
 
 .inactive:hover {
