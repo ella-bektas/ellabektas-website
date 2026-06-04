@@ -10,10 +10,10 @@ type PageSectionProps = {
   direction?: 'vertical' | 'horizontal';
 };
 
-export const PageSection = ({ children, paddingTop, paddingBottom, backgroundColor, direction }: PageSectionProps) => {
+export const PageSection = ({ children, paddingTop, paddingBottom, backgroundColor, direction = 'vertical' }: PageSectionProps) => {
   return (
-    <div className={styles.container}>
-      <div className={styles.content}>{children}</div>
+    <div className={`${styles.container} ${styles[backgroundColor]}`}>
+      <div className={`${styles.content} ${styles[direction]}`}>{children}</div>
     </div>
   );
 };

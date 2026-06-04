@@ -5,6 +5,7 @@ import { Button } from './components/Button/Button'
 import Link from 'next/link'
 import Image from 'next/image'
 import ProjectTile from './components/ProjectTile/ProjectTile';
+import Title from './components/Typography/Title';
 
 
 
@@ -15,7 +16,7 @@ export default function Home() {
       <div> 
       <div className={`${styles.single} ${styles.centered}`}>
         
-          <h1>Hi, I'm Ella!</h1>
+          <Title size="xl">Making complexity feel <span style={{ color: '#C5937A' }}>easy.</span></Title>
           <p>I make complex tech simple to use.</p>
        
       </div>

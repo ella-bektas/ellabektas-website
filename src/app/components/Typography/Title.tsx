@@ -8,8 +8,8 @@ interface TitleProps {
 
 export default function Title({ size = 'm', children }: TitleProps) {
   return (
-    <p className={`${styles[size]} ${styles.title}`}>
+    <div className={`${styles[size]} ${styles.title}`}>
       {children}
-    </p>
+    </div>
   )
 }

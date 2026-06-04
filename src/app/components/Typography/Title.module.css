@@ -1,6 +1,6 @@
 .s {
-    font-size: 3rem;
-    line-height: 1.25rem;
+    font-size: 5rem;
+    line-height: 1.1;
 }
 
 .m {
@@ -13,9 +13,12 @@
     line-height: 1.75rem;
 }
 
+.xl {
+    font-size: 5rem;
+    line-height: 6rem;
+}
 .title {
     color: #646469;
-    font-weight: 700;
-    
-  
+    font-weight: 600;
+
 }
