@@ -47,6 +47,10 @@
   text-align: center;
 }
 
+.centeredTitle {
+  text-align: center;
+}
+
 
 
 /* Grid */
@@ -55,12 +59,12 @@
   grid-template-columns: 1fr;
   gap: 4em;
   width: 100%;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 
-@media (min-width: 1300px) {
+@media (min-width: 1024px) {
   .grid {
   grid-template-columns: 1fr 1fr;
   

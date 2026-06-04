@@ -3,6 +3,7 @@
 import { ReactNode } from "react";
 import styles from './Button.module.css';
 import { Icons, IconName } from "@/app/icons";
+import BodyText from "@/app/components/Typography/BodyText";
 
 type ButtonProps = {
   children?: ReactNode;
@@ -22,7 +23,7 @@ export const Button = ({ children, variant = 'primary', onClick, iconLeft, iconR
   return (
     <button className={className} onClick={onClick}>
       {LeftIcon && <LeftIcon className={styles.icon} />}
-      {children}
+      {children && <BodyText as="span" size="m">{children}</BodyText>}
       {RightIcon && <RightIcon className={styles.icon} />}
     </button>
   );

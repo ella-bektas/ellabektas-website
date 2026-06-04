@@ -25,13 +25,29 @@ body {
   background-color: var(--foreground);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 640px) {
   .main {
-  width: 80vw;
-
+  width: 100vw;
   }
 }
 
+@media (min-width: 768px) {
+  .main {
+  width: 90vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main {
+  width: 90vw;
+  }
+}
+
+@media (min-width: 1280px) {
+  .main {
+  width: 80vw;
+  }
+}
 
 .page-content {
   padding-top: 2vh;
@@ -42,7 +58,7 @@ body {
 }
 
 .page {
-  --background:#FBF9F8 ;
+  --background:#ffffff ;
   --foreground: #ffffff;
 
   --text-primary: #181923;

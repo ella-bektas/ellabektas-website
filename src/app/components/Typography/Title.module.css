@@ -1,0 +1,41 @@
+.s {
+    font-size: 5rem;
+    line-height: 1.1;
+}
+
+.m {
+    font-size: 1.5em;
+    line-height: 1.5rem;
+}
+
+.l {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.xl {
+    font-size: 4rem;
+    line-height: 6rem;
+}
+.title {
+    color: #646469;
+    font-weight: 600;
+
+}
+
+@media (max-width: 800px) {
+.xl {
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+}
+
+
+@media (max-width: 1100px) {
+.xl {
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+}

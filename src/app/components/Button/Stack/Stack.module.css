@@ -1,0 +1,35 @@
+.s {
+    gap: 0.5rem;
+}
+
+.m {
+    gap: 1rem;
+}
+
+.l {
+    gap: 1.5rem;
+}
+
+.start {
+    align-items: flex-start;
+}
+
+.center {
+    align-items: center;
+}
+
+.end {
+    align-items: flex-end;
+}
+
+.vertical {
+    flex-direction: column;
+}
+
+.horizontal {
+    flex-direction: row;
+}
+
+.stack {
+    display: flex;
+}

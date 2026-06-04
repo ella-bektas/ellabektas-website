@@ -16,7 +16,7 @@ export const Active: Story = {
   args: {
     tabs: [
       {
-        title: 'Home',
+        title: 'Portfolio',
         href: '/',
         onClick: () => alert('Clicked Tab 1!'),
         iconLeft: 'HomeOutline',
