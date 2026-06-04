@@ -3,16 +3,16 @@
 import styles from './PageSection.module.css';
 
 type PageSectionProps = {
-  title?: string;
   children?: React.ReactNode;
   paddingTop?: 's' | 'm' | 'l';
   paddingBottom?: 's' | 'm' | 'l';
+  backgroundColor: 'white' | 'grey';
+  direction?: 'vertical' | 'horizontal';
 };
 
-export const PageSection = ({ title, children, paddingTop, paddingBottom }: PageSectionProps) => {
+export const PageSection = ({ children, paddingTop, paddingBottom, backgroundColor, direction }: PageSectionProps) => {
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>{title}</h2>
       <div className={styles.content}>{children}</div>
     </div>
   );

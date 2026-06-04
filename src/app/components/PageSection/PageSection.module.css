@@ -1,0 +1,40 @@
+.s {
+    padding: 2rem;
+}
+
+.m {
+    padding: 4rem;
+}
+
+.l {
+    padding: 6rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10vh 10vw;
+    gap: 2em;
+}
+
+.grey {
+    background-color: red;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: flex-start; 
+}
+
+.vertical {
+    flex-direction: column;
+}
+.horizontal {
+    flex-direction: row;
+}
