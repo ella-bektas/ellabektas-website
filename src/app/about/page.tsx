@@ -18,8 +18,8 @@ const About = () => {
 						I care about the whole problem, not just the interface. I build products where user problems drive every decision.
 					</BodyText>
 					<Stack direction="horizontal" gap="s">
-						<Link href="https://www.linkedin.com/in/ella-bektas-2111061a9" target="_blank" rel="noopener noreferrer"><Button iconLeft="Linkedin">Connect</Button></Link>
-						<Link href="/"><Button variant="secondary">See my work</Button></Link>
+						<Link href="/"><Button>See my work</Button></Link>
+						<Link href="https://www.linkedin.com/in/ella-bektas-2111061a9" target="_blank" rel="noopener noreferrer"><Button variant="secondary" iconLeft="Linkedin">Connect</Button></Link>
 					</Stack>
 				</Stack>
 				<div className={styles.heroPhoto} />
@@ -36,23 +36,6 @@ const About = () => {
 				<BodyText size="m">
 					 Since 2024 I have been working in the Salesforce DevOps space at Gearset, the leading DevOps platform for Salesforce. Working within the product team here has sharpened how I think about building software. We take a jobs-to-be-done approach, putting user problems at the core of every decision and that has shaped a lot of how I work today.
 				</BodyText>
-				<div className={styles.threeColGrid}>
-					<div className={styles.card}>
-						<span className={styles.cardLabel}>Product Manager</span>
-						<BodyText size="m" weight="bold">Gearset + DevOps</BodyText>
-						<BodyText size="s">Helping teams to visualise and improve their DevOps performance.</BodyText>
-					</div>
-					<div className={styles.card}>
-						<span className={styles.cardLabel}>Internship</span>
-						<BodyText size="m" weight="bold">Intelligens + Machine Learning</BodyText>
-						<BodyText size="s">Helping teams to monitor and improve their DevOps performance.</BodyText>
-					</div>
-					<div className={styles.card}>
-						<span className={styles.cardLabel}>Student</span>
-						<BodyText size="m" weight="bold">Lancaster University</BodyText>
-						<BodyText size="s">Helping teams to monitor and improve their DevOps performance.</BodyText>
-					</div>
-				</div>
 			</PageSection>
 
 			{/* Technical stack */}

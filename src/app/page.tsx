@@ -30,6 +30,7 @@ export default function Home() {
             image="./images/gitflow-hero.png"
             description="Introducing a new Gitflow branching strategy into our continuous delivery product."
             href="/"
+            index={0}
           />
           <ProjectTile
             date="2025"
@@ -37,6 +38,7 @@ export default function Home() {
             image="./images/dora-hero.png"
             description="Enabling automation teams to track and improve DevOps performance."
             href="/"
+            index={1}
           />
         </div>
       </PageSection>
