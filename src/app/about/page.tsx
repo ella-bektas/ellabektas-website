@@ -5,6 +5,10 @@ import { PageSection } from "../components/PageSection"
 import BodyText from "../components/Typography/BodyText"
 import Title from "../components/Typography/Title"
 import styles from "./about.module.css"
+import { HiOutlineUser } from "react-icons/hi2"
+import { HiOutlineViewfinderCircle } from "react-icons/hi2"
+import { HiOutlineChartBar } from "react-icons/hi2"
+import { HiOutlineCommandLine } from "react-icons/hi2"
 
 const About = () => {
 	return (
@@ -65,24 +69,24 @@ const About = () => {
 				<Title>What drives me</Title>
 				<div className={styles.twoColGrid}>
 					<div className={styles.card}>
-						<span className={styles.cardNumber}>1</span>
+						<HiOutlineUser size={24} color="#C5937A" />
 						<BodyText size="m" weight="bold">User-first thinking</BodyText>
-						<BodyText size="s">Framing every decision to a real user problem.</BodyText>
+						<BodyText size="s">Every decision traces back to a real user problem, not what seems like a good idea.</BodyText>
 					</div>
 					<div className={styles.card}>
-						<span className={styles.cardNumber}>2</span>
+						<HiOutlineViewfinderCircle size={24} color="#C5937A" />
 						<BodyText size="m" weight="bold">End to end product focus</BodyText>
-						<BodyText size="s">Helping teams to improve their DevOps performance.</BodyText>
+						<BodyText size="s">I care about the whole problem, not just the interface. I stay close to the work from discovery through to delivery.</BodyText>
 					</div>
 					<div className={styles.card}>
-						<span className={styles.cardNumber}>3</span>
+						<HiOutlineChartBar size={24} color="#C5937A" />
 						<BodyText size="m" weight="bold">Data informed</BodyText>
-						<BodyText size="s">Helping teams to visualise and improve their DevOps performance.</BodyText>
+						<BodyText size="s">I use data to validate assumptions and measure impact, not just to report on what happened.</BodyText>
 					</div>
 					<div className={styles.card}>
-						<span className={styles.cardNumber}>4</span>
+						<HiOutlineCommandLine size={24} color="#C5937A" />
 						<BodyText size="m" weight="bold">Technical fluency</BodyText>
-						<BodyText size="s">Helping teams to visualise and improve their DevOps performance.</BodyText>
+						<BodyText size="s">I pick up new tools and complex problems quickly, whether technical or user-facing.</BodyText>
 					</div>
 				</div>
 			</PageSection>
