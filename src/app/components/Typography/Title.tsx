@@ -3,12 +3,13 @@ import styles from "./Title.module.css";
 
 interface TitleProps {
   size?: string;
+  className?: string;
   children: ReactNode;
 }
 
-export default function Title({ size = 'm', children }: TitleProps) {
+export default function Title({ size = 'm', className, children }: TitleProps) {
   return (
-    <div className={`${styles[size]} ${styles.title}`}>
+    <div className={`${styles[size]} ${styles.title} ${className ?? ''}`}>
       {children}
     </div>
   )

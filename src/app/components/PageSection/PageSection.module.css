@@ -37,12 +37,10 @@
 
 .start {
     align-items: flex-start;
-    text-align: left;
 }
 
 .center {
     align-items: center;
-    text-align: center;
 }
 
 .paddingTopS  { padding-top: 4vh; }

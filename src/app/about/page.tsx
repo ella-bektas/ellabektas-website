@@ -11,7 +11,7 @@ const About = () => {
 		<main>
 
 			{/* Hero */}
-			<PageSection backgroundColor="white" direction="horizontal">
+			<PageSection backgroundColor="white" direction="horizontal" align="center">
 				<Stack direction="vertical" gap="l" align="start">
 					<Title size="xl">About.</Title>
 					<BodyText size="m">
