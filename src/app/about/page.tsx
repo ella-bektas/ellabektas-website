@@ -1,4 +1,8 @@
+"use client"
+
 import Link from "next/link"
+import Image from "next/image"
+import { motion } from "framer-motion"
 import { Button } from "../components/Button"
 import Stack from "../components/Button/Stack/Stack"
 import { PageSection } from "../components/PageSection"
@@ -26,7 +30,13 @@ const About = () => {
 						<Link href="https://www.linkedin.com/in/ella-bektas-2111061a9" target="_blank" rel="noopener noreferrer"><Button variant="secondary" iconLeft="Linkedin">Connect</Button></Link>
 					</Stack>
 				</Stack>
-				<div className={styles.heroPhoto} />
+				<motion.div
+					initial={{ opacity: 0, y: 24 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.5, delay: 0.4, ease: 'easeOut' }}
+				>
+					<Image src="/images/ella-bektas.png" alt="Ella Bektas" width={260} height={260} className={styles.heroPhoto} />
+				</motion.div>
 			</PageSection>
 
 			{/* Experience */}

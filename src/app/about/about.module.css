@@ -2,7 +2,7 @@
     width: 260px;
     height: 260px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #d4a8f0 0%, #f0c4d4 40%, #a8d4f0 100%);
+    object-fit: cover;
     flex-shrink: 0;
 }
 
