@@ -29,7 +29,7 @@ export default function RootLayout({
       <div className= "page">
       <main className= "main">
       <Header tabs={[
-      { href: '/', title: 'Home', iconLeft: 'HomeOutline' },
+      { href: '/', title: 'Portfolio', iconLeft: 'HomeOutline' },
       { href: '/about', title: 'About', iconLeft: 'User' },
        ]}
       />

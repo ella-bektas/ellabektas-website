@@ -14,11 +14,28 @@
 }
 
 .xl {
-    font-size: 5rem;
+    font-size: 4rem;
     line-height: 6rem;
 }
 .title {
     color: #646469;
     font-weight: 600;
+
+}
+
+@media (max-width: 800px) {
+.xl {
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+}
+
+
+@media (max-width: 1100px) {
+.xl {
+    font-size: 3rem;
+    line-height: 3rem;
+}
 
 }
