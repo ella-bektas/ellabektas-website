@@ -1,10 +1,14 @@
-"use client";
-
 import "./globals.css";
 import { Poppins } from 'next/font/google';
 import Header from '@/app/components/Header/Header';
 import Footer from '@/app/components/Footer/Footer';
 import { GoogleAnalytics } from '@next/third-parties/google'
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Ella Bektas',
+  description: 'Making complexity feel easy. I make complex tech simple to use. Enabling automation teams to track and improve DevOps performance.',
+};
 
 
 
