@@ -15,7 +15,7 @@ const Header = ({ tabs }: HeaderProps) => {
     <div className={styles.container}>
       
       <div className={styles.name}>
-        <Image src={Logo} alt="Logo" width={'40'} height={40} />
+        <Image src={Logo} alt="Ella Bektas" width={'40'} height={40} />
       </div>
       
       <Tabs tabs={tabs} />
