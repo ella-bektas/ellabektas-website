@@ -41,7 +41,6 @@ const About = () => {
 
 			{/* Experience */}
 			<PageSection backgroundColor="grey" direction="vertical">
-				<span className={styles.sectionLabel}>Experience</span>
 				<Title>How I got into product</Title>
 				<BodyText size="m">
 					My first product role was at a machine learning company that built software for lab scientists. I was the bridge between the technology and the people using it, helping non data scientists extract value from machine learning models to enable predictive experimental design and speed up the discovery of new materials in R&D.
