@@ -9,17 +9,20 @@ import Stack from './components/Button/Stack/Stack';
 import { PageSection } from './components/PageSection';
 import BodyText from './components/Typography/BodyText';
 import Hero from './components/Hero';
+import Divider from './components/Divider';
 
 export default function Home() {
   return (
     <main>
       <PageSection backgroundColor="white" direction="vertical" align="center">
         <Hero imageSrc="/images/outline-profile.png" imageAlt="Ella Bektas" imagePosition="left" imageWidth={400} imageHeight={400}>
-          <Title size="xl">Making complexity<br />feel <span style={{ color: '#C5937A' }}>easy.</span></Title>
-          <BodyText size="m">I make complex tech simple to use.</BodyText>
+          <Title size="xl">Ella Bektas</Title>
+          <BodyText size="m" weight="bold" style={{ fontSize: 'clamp(1rem, 2.5vw, 1.75rem)' }}>Making technical products feel easy.</BodyText>
+          <Divider />
+          <BodyText size="m">I'm Ella, a Product Designer at Gearset who designs DevOps and automation solutions for Salesforce teams. I work end to end from discovery through to the shipped product. Embedded with the engineers and product managers, I never design in isolation.</BodyText>
           <Stack direction="horizontal" gap="s">
-            <Link href="/about"><Button>Learn more</Button></Link>
-            <Link href="https://www.linkedin.com/in/ella-bektas-2111061a9" target="_blank" rel="noopener noreferrer"><Button variant="secondary" iconLeft="Linkedin">Connect</Button></Link>
+            <Link href="/about"><Button>About me</Button></Link>
+            <Link href="https://www.linkedin.com/in/ella-bektas-2111061a9" target="_blank" rel="noopener noreferrer"><Button variant="secondary" iconLeft="Linkedin">LinkedIn</Button></Link>
           </Stack>
         </Hero>
       </PageSection>

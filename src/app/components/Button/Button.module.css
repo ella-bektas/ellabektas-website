@@ -1,9 +1,9 @@
 .primary {
-  background-color: #C5937A;
+  background-color: #CCBBAE;
   color: white;
   padding: 0.5rem 1rem;
-  border-radius: 16px;
-  border: 1.5px solid #C5937A;
+  border-radius: 6px;
+  border: 1.5px solid #CCBBAE;
   cursor: pointer;
   transition: background-color 0.2s, border-color 0.2s;
   display: inline-flex;
@@ -11,20 +11,21 @@
   justify-content: center;
   gap: .5em;
   height: 100%;
+  font-family: var(--font-playfair), serif;
 }
 
 .primary:hover {
-  background-color: #A67A62;
-  border-color: #A67A62;
+  background-color: #B8A696;
+  border-color: #B8A696;
 }
 
 /* Secondary variant */
 .secondary {
   background-color: transparent;
-  color: #C5937A;
+  color: #CCBBAE;
   padding: 0.5rem 1rem;
-  border-radius: 16px;
-  border: 1.5px solid #C5937A;
+  border-radius: 6px;
+  border: 1.5px solid #CCBBAE;
   cursor: pointer;
   transition: background-color 0.2s, border-color 0.2s;
   display: inline-flex;
@@ -32,10 +33,11 @@
   justify-content: center;
   gap: .5em;
   height: 100%;
+  font-family: var(--font-playfair), serif;
 }
 
 .secondary:hover {
-  background-color: #FDF6F3;
+  background-color: #F5EBE0;
 }
 
 /* Tertiary variant */
@@ -43,7 +45,7 @@
   background-color: transparent;
   color: #44403C;
   padding: 0.5rem 1rem;
-  border-radius: 16px;
+  border-radius: 6px;
   border: none;
   cursor: pointer;
   transition: background-color 0.2s;
@@ -51,6 +53,7 @@
   align-items: center;
   justify-content: center;
   gap: .5em;
+  font-family: var(--font-playfair), serif;
 }
 
 .tertiary:hover {
@@ -66,7 +69,7 @@
   background-color: transparent;
   color: #1B1917;
   padding: 0.5rem 1rem;
-  border-radius: 16px;
+  border-radius: 6px;
   border: none;
   cursor: pointer;
   transition: background-color 0.2s;
@@ -75,8 +78,9 @@
   justify-content: center;
   gap: .5em;
   height: 100%;
+  font-family: var(--font-playfair), serif;
 }
 
 .link:hover {
-  color: #C5937A;
+  color: #CCBBAE;
 }
