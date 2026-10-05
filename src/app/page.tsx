@@ -22,7 +22,7 @@ export default function Home() {
           <BodyText size="m">I'm Ella, a Product Designer at Gearset who designs DevOps and automation solutions for Salesforce teams. I work end to end from discovery through to the shipped product. Embedded with the engineers and product managers, I never design in isolation.</BodyText>
           <Stack direction="horizontal" gap="s">
             <Link href="/about"><Button>About me</Button></Link>
-            <Link href="https://www.linkedin.com/in/ella-bektas-2111061a9" target="_blank" rel="noopener noreferrer"><Button variant="secondary" iconLeft="Linkedin">LinkedIn</Button></Link>
+            <Link href="https://www.linkedin.com/in/ella-bektas-2111061a9" target="_blank" rel="noopener noreferrer"><Button variant="secondary">LinkedIn</Button></Link>
           </Stack>
         </Hero>
       </PageSection>
@@ -34,7 +34,7 @@ export default function Home() {
             title="Gitflow for CI/CD"
             image="./images/gitflow-hero.png"
             description="Introducing a new Gitflow branching strategy into our continuous delivery product."
-            href="/"
+            href="/gitflow-ci-cd"
             index={0}
           />
           <ProjectTile
@@ -42,7 +42,7 @@ export default function Home() {
             title="DORA metrics for CI pipelines"
             image="./images/dora-hero.png"
             description="Enabling automation teams to track and improve DevOps performance."
-            href="/"
+            href="/dora-metrics-ci"
             index={1}
           />
         </div>
