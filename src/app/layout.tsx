@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Poppins } from 'next/font/google';
+import { Playfair_Display } from 'next/font/google';
 import Header from '@/app/components/Header/Header';
 import Footer from '@/app/components/Footer/Footer';
 import { GoogleAnalytics } from '@next/third-parties/google'
@@ -10,13 +10,10 @@ export const metadata: Metadata = {
   description: 'Making complexity feel easy. I make complex tech simple to use. Enabling automation teams to track and improve DevOps performance.',
 };
 
-
-
-
-const poppins = Poppins({
+const playfairDisplay = Playfair_Display({
   weight: ['400', '500', '600', '700'],
   subsets: ['latin'],
-  variable: '--font-poppins',
+  variable: '--font-playfair',
 });
 
 export default function RootLayout({
@@ -27,7 +24,7 @@ export default function RootLayout({
  
 
   return (
-    <html lang="en" className={poppins.className}>
+    <html lang="en" className={playfairDisplay.className}>
       <body>
       <GoogleAnalytics gaId="G-WYW1D4WQDN" />
       <div className= "page">

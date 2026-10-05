@@ -14,8 +14,8 @@ export default function Home() {
   return (
     <main>
       <PageSection backgroundColor="white" direction="vertical" align="center">
-        <Hero imageSrc="/images/outline-profile.png" imageAlt="Ella Bektas" imagePosition="left">
-          <Title size="xl" className={styles.centeredTitle}>Making complexity<br />feel <span style={{ color: '#C5937A' }}>easy.</span></Title>
+        <Hero imageSrc="/images/outline-profile.png" imageAlt="Ella Bektas" imagePosition="left" imageWidth={400} imageHeight={400}>
+          <Title size="xl">Making complexity<br />feel <span style={{ color: '#C5937A' }}>easy.</span></Title>
           <BodyText size="m">I make complex tech simple to use.</BodyText>
           <Stack direction="horizontal" gap="s">
             <Link href="/about"><Button>Learn more</Button></Link>

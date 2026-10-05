@@ -61,23 +61,23 @@ body {
   --background:#ffffff ;
   --foreground: #ffffff;
 
-  --text-primary: #181923;
+  --text-primary: #2C2C2B;
   --text-secondary: #646469;
    --text-tertiary: #8A898E;
-  
-  font-family: "Poppins", sans-serif;
- 
+
+  font-family: var(--font-playfair), serif;
+  color: #2C2C2B;
+
   display: flex;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  
-  font-family: var(--font-geist-sans);
+
   background-color: var(--background);
 }
 
 body {
-  color: var(--foreground);
+  color: #2C2C2B;
   background: var(--background);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

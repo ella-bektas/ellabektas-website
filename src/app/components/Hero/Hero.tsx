@@ -7,6 +7,8 @@ type HeroProps = {
   imageSrc: string;
   imageAlt: string;
   imagePosition?: 'left' | 'right';
+  imageWidth?: number;
+  imageHeight?: number;
   children: React.ReactNode;
 };
 
@@ -14,6 +16,8 @@ export const Hero = ({
   imageSrc,
   imageAlt,
   imagePosition = 'left',
+  imageWidth = 300,
+  imageHeight = 300,
   children
 }: HeroProps) => {
   const imageElement = (
@@ -21,8 +25,8 @@ export const Hero = ({
       <Image
         src={imageSrc}
         alt={imageAlt}
-        width={300}
-        height={300}
+        width={imageWidth}
+        height={imageHeight}
         priority
       />
     </div>
