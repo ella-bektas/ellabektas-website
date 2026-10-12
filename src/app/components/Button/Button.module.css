@@ -1,9 +1,9 @@
 .primary {
-  background-color: #CCBBAE;
+  background-color: var(--color-primary-600);
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 6px;
-  border: 1.5px solid #CCBBAE;
+  border: 1.5px solid var(--color-primary-600);
   cursor: pointer;
   transition: background-color 0.2s, border-color 0.2s;
   display: inline-flex;
@@ -15,17 +15,17 @@
 }
 
 .primary:hover {
-  background-color: #B8A696;
-  border-color: #B8A696;
+  background-color: var(--color-primary-700);
+  border-color: var(--color-primary-700);
 }
 
 /* Secondary variant */
 .secondary {
   background-color: transparent;
-  color: #66684D;
+  color: var(--color-primary-800);
   padding: 0.5rem 1rem;
   border-radius: 6px;
-  border: 1.5px solid #CCBBAE;
+  border: 1.5px solid var(--color-primary-600);
   cursor: pointer;
   transition: background-color 0.2s, border-color 0.2s;
   display: inline-flex;
@@ -37,7 +37,7 @@
 }
 
 .secondary:hover {
-  background-color: #F5EBE0;
+  background-color: var(--color-primary-50);
 }
 
 /* Tertiary variant */
@@ -82,5 +82,5 @@
 }
 
 .link:hover {
-  color: #CCBBAE;
+  color: var(--color-primary-600);
 }

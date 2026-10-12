@@ -8,7 +8,7 @@ type PageSectionProps = {
   children?: React.ReactNode;
   paddingTop?: 's' | 'm' | 'l';
   paddingBottom?: 's' | 'm' | 'l';
-  backgroundColor: 'white' | 'grey';
+  backgroundColor?: string;
   direction?: 'vertical' | 'horizontal';
   align?: 'start' | 'center';
   mouseGlow?: boolean;
@@ -18,7 +18,7 @@ type PageSectionProps = {
 const paddingTopClass = { s: styles.paddingTopS, m: styles.paddingTopM, l: styles.paddingTopL };
 const paddingBottomClass = { s: styles.paddingBottomS, m: styles.paddingBottomM, l: styles.paddingBottomL };
 
-export const PageSection = ({ children, paddingTop, paddingBottom, backgroundColor, direction = 'vertical', align = 'start', mouseGlow = false, glowColor = 'rgba(255, 100, 255, 0.4)' }: PageSectionProps) => {
+export const PageSection = ({ children, paddingTop, paddingBottom, backgroundColor = 'var(--color-neutral-0)', direction = 'vertical', align = 'start', mouseGlow = false, glowColor = 'rgba(255, 100, 255, 0.4)' }: PageSectionProps) => {
   const ptClass = paddingTop ? paddingTopClass[paddingTop] : '';
   const pbClass = paddingBottom ? paddingBottomClass[paddingBottom] : '';
   const containerRef = useRef<HTMLDivElement>(null);
@@ -43,7 +43,7 @@ export const PageSection = ({ children, paddingTop, paddingBottom, backgroundCol
   }, [mouseGlow]);
 
   return (
-    <div ref={containerRef} className={`${styles.container} ${styles[backgroundColor]} ${mouseGlow ? styles.hasGlow : ''}`}>
+    <div ref={containerRef} className={`${styles.container} ${mouseGlow ? styles.hasGlow : ''}`} style={{ backgroundColor }}>
       {mouseGlow && (
         <div
           className={styles.glow}

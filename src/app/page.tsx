@@ -14,7 +14,7 @@ import Divider from './components/Divider';
 export default function Home() {
   return (
     <main>
-      <PageSection backgroundColor="white" direction="vertical" align="center" mouseGlow={true} glowColor="rgba(210, 180, 140, 0.4)">
+      <PageSection backgroundColor="var(--color-neutral-50)" direction="vertical" align="center" mouseGlow={true} glowColor="rgba(139, 130, 112, 0.4)">
         <Hero imageSrc="/images/outline-profile.png" imageAlt="Ella Bektas" imagePosition="left" imageWidth={400} imageHeight={400}>
           <Title size="xl">Ella Bektas</Title>
           <BodyText size="m" weight="bold" style={{ fontSize: 'clamp(1rem, 2.5vw, 1.75rem)' }}>Making technical products feel easy.</BodyText>
@@ -27,7 +27,7 @@ export default function Home() {
         </Hero>
       </PageSection>
 
-      <PageSection backgroundColor="white" direction="vertical">
+      <PageSection backgroundColor="var(--color-neutral-0)" direction="vertical">
         <div className={styles.grid}>
           <ProjectTile
             date="2026"

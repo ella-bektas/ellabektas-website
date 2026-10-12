@@ -12,17 +12,17 @@
 
 .glow {
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    filter: blur(40px);
+    filter: blur(30px);
     pointer-events: none;
     z-index: 0;
     transform: translate(-50%, -50%);
 }
 
 .white {
-    background-color: #ffffff;
+    background-color: var(--color-neutral-50);
 }
 
 .grey {
