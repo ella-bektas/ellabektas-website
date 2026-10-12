@@ -2,6 +2,7 @@ import "./globals.css";
 import { Playfair_Display } from 'next/font/google';
 import Header from '@/app/components/Header/Header';
 import Footer from '@/app/components/Footer/Footer';
+import { BreadcrumbProvider } from '@/app/components/Breadcrumb/BreadcrumbContext';
 import { GoogleAnalytics } from '@next/third-parties/google'
 import type { Metadata } from 'next';
 
@@ -27,6 +28,7 @@ export default function RootLayout({
     <html lang="en" className={playfairDisplay.className}>
       <body>
       <GoogleAnalytics gaId="G-WYW1D4WQDN" />
+      <BreadcrumbProvider>
       <div className= "page">
       <main className= "main">
       <Header tabs={[
@@ -37,15 +39,16 @@ export default function RootLayout({
       <div className="page-content">
       {children}
       </div>
-      
 
-      <Footer> 
+
+      <Footer>
        {}
       </Footer>
 
 
         </main>
       </div>
+      </BreadcrumbProvider>
       </body>
     </html>
   );

@@ -3,11 +3,17 @@
 import { PageSection } from '@/app/components/PageSection';
 import CaseStudyHero from '@/app/components/CaseStudyHero';
 import CaseStudySection from '@/app/components/CaseStudySection';
+import { useSetBreadcrumbs } from '@/app/components/Breadcrumb/BreadcrumbContext';
 
 export default function DoraCaseStudy() {
+  useSetBreadcrumbs([
+    { label: 'Portfolio', href: '/' },
+    { label: 'DORA Metrics for CI Pipelines' },
+  ]);
+
   return (
-    <main>
-      <PageSection backgroundColor="white" direction="vertical">
+    <main className="case-study">
+      <PageSection backgroundColor="var(--color-neutral-0)" direction="vertical">
         <CaseStudyHero
           title="DORA Metrics for CI Pipelines"
           tagline="Enabling automation teams to track and improve DevOps performance"
@@ -17,7 +23,7 @@ export default function DoraCaseStudy() {
         />
       </PageSection>
 
-      <PageSection backgroundColor="white" direction="vertical">
+      <PageSection backgroundColor="var(--color-neutral-0)" direction="vertical">
         <CaseStudySection
           title="The Problem"
           content={[
@@ -30,7 +36,7 @@ export default function DoraCaseStudy() {
         />
       </PageSection>
 
-      <PageSection backgroundColor="white" direction="vertical">
+      <PageSection backgroundColor="var(--color-neutral-0)" direction="vertical">
         <CaseStudySection
           title="The Solution"
           content={[
@@ -43,7 +49,7 @@ export default function DoraCaseStudy() {
         />
       </PageSection>
 
-      <PageSection backgroundColor="white" direction="vertical">
+      <PageSection backgroundColor="var(--color-neutral-0)" direction="vertical">
         <CaseStudySection
           title="The Results"
           content="With the new DORA metrics dashboard, teams gained unprecedented visibility into their performance. Within 3 months, we saw an average 35% improvement in deployment frequency and a 50% reduction in mean time to recovery. Teams that actively used the dashboard reported higher confidence in their DevOps practices and improved collaboration across the organization."

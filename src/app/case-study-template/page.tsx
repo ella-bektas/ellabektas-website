@@ -3,11 +3,17 @@
 import { PageSection } from '@/app/components/PageSection';
 import CaseStudyHero from '@/app/components/CaseStudyHero';
 import CaseStudySection from '@/app/components/CaseStudySection';
+import { useSetBreadcrumbs } from '@/app/components/Breadcrumb/BreadcrumbContext';
 
 export default function CaseStudyTemplate() {
+  useSetBreadcrumbs([
+    { label: 'Portfolio', href: '/' },
+    { label: 'Project Title' },
+  ]);
+
   return (
-    <main>
-      <PageSection backgroundColor="white" direction="vertical">
+    <main className="case-study">
+      <PageSection backgroundColor="var(--color-neutral-0)" direction="vertical">
         <CaseStudyHero
           title="Project Title"
           tagline="Tagline goes here maybe"
@@ -17,7 +23,7 @@ export default function CaseStudyTemplate() {
         />
       </PageSection>
 
-      <PageSection backgroundColor="white" direction="vertical">
+      <PageSection backgroundColor="var(--color-neutral-0)" direction="vertical">
         <CaseStudySection
           title="The Problem"
           content="Hi, I'm Ella, a product designer at Gearset working in DevOps space for Salesforce teams. I turn complex technical workflows into interfaces engineers actually want to use. Hi, I'm Ella, a product designer at Gearset working in DevOps space for Salesforce teams."
@@ -27,7 +33,7 @@ export default function CaseStudyTemplate() {
         />
       </PageSection>
 
-      <PageSection backgroundColor="white" direction="vertical">
+      <PageSection backgroundColor="var(--color-neutral-0)" direction="vertical">
         <CaseStudySection
           title="The Solution"
           content={[
@@ -40,7 +46,7 @@ export default function CaseStudyTemplate() {
         />
       </PageSection>
 
-      <PageSection backgroundColor="white" direction="vertical">
+      <PageSection backgroundColor="var(--color-neutral-0)" direction="vertical">
         <CaseStudySection
           title="The Results"
           content="Hi, I'm Ella, a product designer at Gearset working in DevOps space for Salesforce teams. I turn complex technical workflows into interfaces engineers actually want to use."

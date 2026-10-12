@@ -178,3 +178,10 @@ a {
 }
 
 
+
+/* Case study pages: white background across the whole page */
+body:has(.case-study),
+body:has(.case-study) .page {
+  background: var(--color-neutral-0);
+  background-color: var(--color-neutral-0);
+}

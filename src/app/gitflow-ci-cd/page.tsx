@@ -3,11 +3,17 @@
 import { PageSection } from '@/app/components/PageSection';
 import CaseStudyHero from '@/app/components/CaseStudyHero';
 import CaseStudySection from '@/app/components/CaseStudySection';
+import { useSetBreadcrumbs } from '@/app/components/Breadcrumb/BreadcrumbContext';
 
 export default function GitflowCaseStudy() {
+  useSetBreadcrumbs([
+    { label: 'Portfolio', href: '/' },
+    { label: 'Gitflow for CI/CD' },
+  ]);
+
   return (
-    <main>
-      <PageSection backgroundColor="white" direction="vertical">
+    <main className="case-study">
+      <PageSection backgroundColor="var(--color-neutral-0)" direction="vertical">
         <CaseStudyHero
           title="Gitflow for CI/CD"
           tagline="Enabling enterprise teams to adopt mature DevOps branching practices"
@@ -17,7 +23,7 @@ export default function GitflowCaseStudy() {
         />
       </PageSection>
 
-      <PageSection backgroundColor="white" direction="vertical">
+      <PageSection backgroundColor="var(--color-neutral-0)" direction="vertical">
         <CaseStudySection
           title="The Problem"
           content={[
@@ -30,7 +36,7 @@ export default function GitflowCaseStudy() {
         />
       </PageSection>
 
-      <PageSection backgroundColor="white" direction="vertical">
+      <PageSection backgroundColor="var(--color-neutral-0)" direction="vertical">
         <CaseStudySection
           title="Discovery & Reframing"
           content={[
@@ -44,7 +50,7 @@ export default function GitflowCaseStudy() {
         />
       </PageSection>
 
-      <PageSection backgroundColor="white" direction="vertical">
+      <PageSection backgroundColor="var(--color-neutral-0)" direction="vertical">
         <CaseStudySection
           title="Ideation & Testing"
           content={[
@@ -57,7 +63,7 @@ export default function GitflowCaseStudy() {
         />
       </PageSection>
 
-      <PageSection backgroundColor="white" direction="vertical">
+      <PageSection backgroundColor="var(--color-neutral-0)" direction="vertical">
         <CaseStudySection
           title="The Result"
           content={[
