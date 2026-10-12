@@ -7,7 +7,7 @@ import { useSetBreadcrumbs } from '@/app/components/Breadcrumb/BreadcrumbContext
 
 export default function GitflowCaseStudy() {
   useSetBreadcrumbs([
-    { label: 'Portfolio', href: '/#favourite-projects' },
+    { label: 'Portfolio', href: '/', scrollTo: 'favourite-projects' },
     { label: 'Gitflow for CI/CD' },
   ]);
 

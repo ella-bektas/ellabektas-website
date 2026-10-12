@@ -7,7 +7,7 @@ import { useSetBreadcrumbs } from '@/app/components/Breadcrumb/BreadcrumbContext
 
 export default function CaseStudyTemplate() {
   useSetBreadcrumbs([
-    { label: 'Portfolio', href: '/#favourite-projects' },
+    { label: 'Portfolio', href: '/', scrollTo: 'favourite-projects' },
     { label: 'Project Title' },
   ]);
 

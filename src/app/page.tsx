@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from 'react';
 import styles from "./page.module.css";
 import { Button } from './components/Button/Button'
 import Link from 'next/link'
@@ -10,8 +11,16 @@ import { PageSection } from './components/PageSection';
 import BodyText from './components/Typography/BodyText';
 import Hero from './components/Hero';
 import Divider from './components/Divider';
+import { SCROLL_TARGET_KEY } from './components/Breadcrumb/Breadcrumb';
 
 export default function Home() {
+  useEffect(() => {
+    const targetId = sessionStorage.getItem(SCROLL_TARGET_KEY);
+    if (!targetId) return;
+    sessionStorage.removeItem(SCROLL_TARGET_KEY);
+    document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' });
+  }, []);
+
   return (
     <main>
       <PageSection backgroundColor="var(--color-neutral-50)" direction="vertical" align="center" mouseGlow={true} glowColor="rgba(94, 85, 80, 0.4)">
@@ -28,7 +37,7 @@ export default function Home() {
       </PageSection>
 
       <div id="favourite-projects">
-      <PageSection backgroundColor="transparent" direction="vertical">
+        <PageSection backgroundColor="transparent" direction="vertical">
         <Title size="m" align="center" style={{ fontSize: 'clamp(1rem, 2.5vw, 1.75rem)', marginBottom: '3rem' }}>Favourite projects</Title>
         <div className={styles.grid}>
           <ProjectTile
