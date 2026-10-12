@@ -12,10 +12,10 @@
 
 .glow {
     position: absolute;
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    filter: blur(30px);
+    filter: blur(25px);
     pointer-events: none;
     z-index: 0;
     transform: translate(-50%, -50%);
