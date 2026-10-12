@@ -2,6 +2,23 @@
     width: 100%;
     box-sizing: border-box;
     border-radius: 1em;
+    position: relative;
+    overflow: hidden;
+}
+
+.container.hasGlow {
+    overflow: visible;
+}
+
+.glow {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    filter: blur(40px);
+    pointer-events: none;
+    z-index: 0;
+    transform: translate(-50%, -50%);
 }
 
 .white {
@@ -18,6 +35,8 @@
     padding: 14vh 5vw;
     box-sizing: border-box;
     width: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 .vertical {

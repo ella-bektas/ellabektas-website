@@ -14,12 +14,12 @@ import Divider from './components/Divider';
 export default function Home() {
   return (
     <main>
-      <PageSection backgroundColor="white" direction="vertical" align="center">
+      <PageSection backgroundColor="white" direction="vertical" align="center" mouseGlow={true} glowColor="rgba(210, 180, 140, 0.4)">
         <Hero imageSrc="/images/outline-profile.png" imageAlt="Ella Bektas" imagePosition="left" imageWidth={400} imageHeight={400}>
           <Title size="xl">Ella Bektas</Title>
           <BodyText size="m" weight="bold" style={{ fontSize: 'clamp(1rem, 2.5vw, 1.75rem)' }}>Making technical products feel easy.</BodyText>
           <Divider />
-          <BodyText size="m">I'm Ella, a Product Designer at Gearset who designs DevOps and automation solutions for Salesforce teams. I work end to end from discovery through to the shipped product. Embedded with the engineers and product managers, I never design in isolation.</BodyText>
+          <BodyText size="m">I'm Ella, a Product Designer at Gearset who designs DevOps and automation solutions for Salesforce teams. I look at the jobs a user is trying to achieve and design solutions to the problems that are blocking them from completing those jobs. Our engineers, Product Managers and I solve the problems together. I never design in isolation.</BodyText>
           <Stack direction="horizontal" gap="s">
             <Link href="/about"><Button>About me</Button></Link>
             <Link href="https://www.linkedin.com/in/ella-bektas-2111061a9" target="_blank" rel="noopener noreferrer"><Button variant="secondary">LinkedIn</Button></Link>
