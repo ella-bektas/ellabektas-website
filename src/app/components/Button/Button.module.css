@@ -1,6 +1,6 @@
 .primary {
   background-color: var(--color-primary-600);
-  color: white;
+  color: var(--color-neutral-50);
   padding: 0.5rem 1rem;
   border-radius: 6px;
   border: 1.5px solid var(--color-primary-600);
@@ -43,7 +43,7 @@
 /* Tertiary variant */
 .tertiary {
   background-color: transparent;
-  color: #44403C;
+  color: var(--text-primary);
   padding: 0.5rem 1rem;
   border-radius: 6px;
   border: none;
@@ -57,7 +57,7 @@
 }
 
 .tertiary:hover {
-  background-color: #F5F5F5;
+  background-color: var(--color-neutral-100);
 }
 
 .icon {
@@ -67,7 +67,7 @@
 
 .link {
   background-color: transparent;
-  color: #1B1917;
+  color: var(--text-primary);
   padding: 0.5rem 1rem;
   border-radius: 6px;
   border: none;

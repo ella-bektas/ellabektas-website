@@ -25,32 +25,69 @@
   --color-primary-800: #403d38;
   --color-primary-900: #2b2825;
 
-  /* Brand - Secondary Accent */
-  --color-secondary-50: #fdf8f3;
-  --color-secondary-100: #fdeee4;
-  --color-secondary-200: #fbdcc9;
-  --color-secondary-300: #f8c5a3;
-  --color-secondary-400: #f4a460;
-  --color-secondary-500: #f0956d;
-  --color-secondary-600: #e67e50;
-  --color-secondary-700: #d96f45;
-  --color-secondary-800: #c55a2b;
-  --color-secondary-900: #a0451e;
+  /* Text Colors (using Taupe palette) */
+  --text-primary: var(--color-neutral-900);
+  --text-secondary: var(--color-neutral-600);
+  --text-tertiary: var(--color-neutral-500);
+}
 
-  /* Status Colors */
-  --color-success-500: #22c55e;
-  --color-warning-500: #f59e0b;
-  --color-error-500: #ef4444;
-  --color-info-500: #3b82f6;
+html[data-theme="dark"] {
+  /* Neutral Colors (Taupe) - Dark Mode */
+  --color-neutral-0: #0f0e0d;
+  --color-neutral-50: #1a1816;
+  --color-neutral-100: #211d1a;
+  --color-neutral-200: #2d2925;
+  --color-neutral-300: #3a322f;
+  --color-neutral-400: #4a423a;
+  --color-neutral-500: #5e5550;
+  --color-neutral-600: #78716b;
+  --color-neutral-700: #9d8b7e;
+  --color-neutral-800: #b5a596;
+  --color-neutral-900: #d9cfc4;
+  --color-neutral-950: #f8f6f4;
 
-  /* Semantic */
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Brand - Primary Accent (Olive) - Dark Mode */
+  --color-primary-50: #2b2825;
+  --color-primary-100: #403d38;
+  --color-primary-200: #5a544a;
+  --color-primary-300: #6f6a5f;
+  --color-primary-400: #8b8270;
+  --color-primary-500: #a89c8f;
+  --color-primary-600: #c9bfb3;
+  --color-primary-700: #ddd8cf;
+  --color-primary-800: #e8e7e2;
+  --color-primary-900: #f5f5f3;
+
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    
+  html:not([data-theme="light"]) {
+    /* Neutral Colors (Taupe) - Dark Mode */
+    --color-neutral-0: #0f0e0d;
+    --color-neutral-50: #1a1816;
+    --color-neutral-100: #211d1a;
+    --color-neutral-200: #2d2925;
+    --color-neutral-300: #3a322f;
+    --color-neutral-400: #4a423a;
+    --color-neutral-500: #5e5550;
+    --color-neutral-600: #78716b;
+    --color-neutral-700: #9d8b7e;
+    --color-neutral-800: #b5a596;
+    --color-neutral-900: #d9cfc4;
+    --color-neutral-950: #f8f6f4;
+
+    /* Brand - Primary Accent (Olive) - Dark Mode */
+    --color-primary-50: #2b2825;
+    --color-primary-100: #403d38;
+    --color-primary-200: #5a544a;
+    --color-primary-300: #6f6a5f;
+    --color-primary-400: #8b8270;
+    --color-primary-500: #a89c8f;
+    --color-primary-600: #c9bfb3;
+    --color-primary-700: #ddd8cf;
+    --color-primary-800: #e8e7e2;
+    --color-primary-900: #f5f5f3;
+
   }
 }
 
@@ -102,12 +139,8 @@ body {
 }
 
 .page {
-  --text-primary: #2C2C2B;
-  --text-secondary: #646469;
-   --text-tertiary: #8A898E;
-
   font-family: var(--font-playfair), serif;
-  color: #2C2C2B;
+  color: var(--text-primary);
 
   display: flex;
   min-height: 100vh;
@@ -118,7 +151,7 @@ body {
 }
 
 body {
-  color: #2C2C2B;
+  color: var(--text-primary);
   background: var(--color-neutral-50);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

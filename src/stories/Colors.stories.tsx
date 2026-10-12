@@ -44,52 +44,32 @@ const ColorPalette = ({
 );
 
 export const Palette = () => {
-  const neutralColors = {
-    '0': '#ffffff',
-    '50': '#fafaf9',
-    '100': '#f5f5f4',
-    '200': '#e7e5e4',
-    '300': '#d6d3d1',
-    '400': '#a8a29e',
-    '500': '#78716b',
-    '600': '#57534e',
-    '700': '#44403c',
-    '800': '#292524',
-    '900': '#1c1917',
-    '950': '#0f0e0d',
-  };
-
   const primaryColors = {
-    '50': '#faf5ff',
-    '100': '#f3e8ff',
-    '200': '#e9d5ff',
-    '300': '#d8b4fe',
-    '400': '#c084fc',
-    '500': '#a855f7',
-    '600': '#9333ea',
-    '700': '#7e22ce',
-    '800': '#6b21a8',
-    '900': '#581c87',
+    '50': '#f5f5f3',
+    '100': '#e8e7e2',
+    '200': '#ddd8cf',
+    '300': '#c9bfb3',
+    '400': '#a89c8f',
+    '500': '#8b8270',
+    '600': '#6f6a5f',
+    '700': '#5a544a',
+    '800': '#403d38',
+    '900': '#2b2825',
   };
 
-  const secondaryColors = {
-    '50': '#fdf8f3',
-    '100': '#fdeee4',
-    '200': '#fbdcc9',
-    '300': '#f8c5a3',
-    '400': '#f4a460',
-    '500': '#f0956d',
-    '600': '#e67e50',
-    '700': '#d96f45',
-    '800': '#c55a2b',
-    '900': '#a0451e',
-  };
-
-  const statusColors = {
-    'Success': '#22c55e',
-    'Warning': '#f59e0b',
-    'Error': '#ef4444',
-    'Info': '#3b82f6',
+  const taupeColors = {
+    '0': '#ffffff',
+    '50': '#f8f6f4',
+    '100': '#f2ede9',
+    '200': '#e7e1db',
+    '300': '#d9cfc4',
+    '400': '#b5a596',
+    '500': '#9d8b7e',
+    '600': '#78716b',
+    '700': '#5e5550',
+    '800': '#4a423a',
+    '900': '#3a322f',
+    '950': '#211d1a',
   };
 
   return (
@@ -101,10 +81,8 @@ export const Palette = () => {
         Complete color system for the design system
       </p>
 
-      <ColorPalette name="Neutral" colors={neutralColors} />
-      <ColorPalette name="Primary (Purple)" colors={primaryColors} />
-      <ColorPalette name="Secondary (Amber)" colors={secondaryColors} />
-      <ColorPalette name="Status" colors={statusColors} />
+      <ColorPalette name="Primary (Olive)" colors={primaryColors} />
+      <ColorPalette name="Taupe (Neutral)" colors={taupeColors} />
     </div>
   );
 };
