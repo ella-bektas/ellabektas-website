@@ -27,7 +27,7 @@ export default function Home() {
         </Hero>
       </PageSection>
 
-      <PageSection backgroundColor="var(--color-neutral-0)" direction="vertical">
+      <PageSection backgroundColor="var(--color-neutral-50)" direction="vertical">
         <div className={styles.grid}>
           <ProjectTile
             date="2026"

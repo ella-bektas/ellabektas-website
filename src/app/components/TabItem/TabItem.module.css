@@ -1,13 +1,14 @@
 /* Active state */
 
 .active {
-  background-color: #FBF9F8;
+  background-color: transparent;
   color: var(--text-primary);
   padding: 0.5rem 1rem;
-  border-radius: 10px;
+  border-radius: 0;
   border: none;
+  border-bottom: 2px solid var(--color-primary-600);
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: border-color 0.2s;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -21,10 +22,11 @@
   background-color: transparent;
   color: var(--text-secondary);
   padding: 0.5rem 1rem;
-  border-radius: 10px;
+  border-radius: 0;
   border: none;
+  border-bottom: 2px solid transparent;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: border-color 0.2s, color 0.2s;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -32,5 +34,6 @@
 }
 
 .inactive:hover {
-  background-color: #FBF9F8;
+  color: var(--text-primary);
+  border-bottom-color: var(--color-primary-400);
 }

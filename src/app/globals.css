@@ -67,7 +67,6 @@ body {
   width: 100vw;
   flex-direction: column;
   align-items: flex-start;
-  background-color: var(--foreground);
 }
 
 @media (min-width: 640px) {
@@ -103,9 +102,6 @@ body {
 }
 
 .page {
-  --background:#ffffff ;
-  --foreground: #ffffff;
-
   --text-primary: #2C2C2B;
   --text-secondary: #646469;
    --text-tertiary: #8A898E;
@@ -118,12 +114,12 @@ body {
   align-items: center;
   justify-content: center;
 
-  background-color: var(--background);
+  background-color: var(--color-neutral-50);
 }
 
 body {
   color: #2C2C2B;
-  background: var(--background);
+  background: var(--color-neutral-50);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
