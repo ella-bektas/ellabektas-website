@@ -1,9 +1,5 @@
-.heroPhoto {
-    width: 260px;
-    height: 260px;
-    border-radius: 50%;
-    object-fit: cover;
-    flex-shrink: 0;
+.heroContent {
+    width: 50vw;
 }
 
 .sectionLabel {
@@ -63,7 +59,7 @@
     align-items: center;
     gap: 0.5rem;
     font-size: 0.9rem;
-    color: #374151;
+    color: var(--text-primary);
 }
 
 .dot {
