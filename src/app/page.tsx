@@ -27,7 +27,7 @@ export default function Home() {
         </Hero>
       </PageSection>
 
-      <PageSection backgroundColor="var(--color-neutral-0)" direction="vertical">
+      <PageSection backgroundColor="transparent" direction="vertical">
         <Title size="m" align="center" style={{ fontSize: 'clamp(1rem, 2.5vw, 1.75rem)', marginBottom: '3rem' }}>Favourite projects</Title>
         <div className={styles.grid}>
           <ProjectTile

@@ -30,8 +30,8 @@ export default function RootLayout({
       <div className= "page">
       <main className= "main">
       <Header tabs={[
-      { href: '/', title: 'Portfolio', iconLeft: 'HomeOutline' },
-      { href: '/about', title: 'About', iconLeft: 'User' },
+      { href: '/', title: 'Portfolio' },
+      { href: '/about', title: 'About' },
        ]}
       />
       <div className="page-content">

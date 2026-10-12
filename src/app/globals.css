@@ -14,16 +14,17 @@
   --color-neutral-950: #211d1a;
 
   /* Brand - Primary Accent (Olive) */
-  --color-primary-50: #f5f5f3;
-  --color-primary-100: #e8e7e2;
-  --color-primary-200: #ddd8cf;
-  --color-primary-300: #c9bfb3;
-  --color-primary-400: #a89c8f;
-  --color-primary-500: #8b8270;
-  --color-primary-600: #6f6a5f;
-  --color-primary-700: #5a544a;
-  --color-primary-800: #403d38;
-  --color-primary-900: #2b2825;
+  --color-primary-50: #fdfcfb;
+  --color-primary-100: #f8f7f4;
+  --color-primary-200: #ede8e0;
+  --color-primary-300: #dfd8ce;
+  --color-primary-400: #bbb4a8;
+  --color-primary-500: #7f7860;
+  --color-primary-600: #5f5a4f;
+  --color-primary-700: #4d4840;
+  --color-primary-800: #38342f;
+  --color-primary-900: #2a2622;
+  --color-primary-950: #1c1915;
 
   /* Text Colors (using Taupe palette) */
   --text-primary: var(--color-neutral-900);
@@ -47,16 +48,17 @@ html[data-theme="dark"] {
   --color-neutral-950: #f8f6f4;
 
   /* Brand - Primary Accent (Olive) - Dark Mode */
-  --color-primary-50: #2b2825;
-  --color-primary-100: #403d38;
-  --color-primary-200: #5a544a;
-  --color-primary-300: #6f6a5f;
-  --color-primary-400: #8b8270;
-  --color-primary-500: #a89c8f;
-  --color-primary-600: #c9bfb3;
-  --color-primary-700: #ddd8cf;
-  --color-primary-800: #e8e7e2;
-  --color-primary-900: #f5f5f3;
+  --color-primary-50: #2a2622;
+  --color-primary-100: #38342f;
+  --color-primary-200: #4d4840;
+  --color-primary-300: #5f5a4f;
+  --color-primary-400: #7f7860;
+  --color-primary-500: #bbb4a8;
+  --color-primary-600: #dfd8ce;
+  --color-primary-700: #ede8e0;
+  --color-primary-800: #f8f7f4;
+  --color-primary-900: #fdfcfb;
+  --color-primary-950: #f8f7f4;
 
 }
 
@@ -77,16 +79,17 @@ html[data-theme="dark"] {
     --color-neutral-950: #f8f6f4;
 
     /* Brand - Primary Accent (Olive) - Dark Mode */
-    --color-primary-50: #2b2825;
-    --color-primary-100: #403d38;
-    --color-primary-200: #5a544a;
-    --color-primary-300: #6f6a5f;
-    --color-primary-400: #8b8270;
-    --color-primary-500: #a89c8f;
-    --color-primary-600: #c9bfb3;
-    --color-primary-700: #ddd8cf;
-    --color-primary-800: #e8e7e2;
-    --color-primary-900: #f5f5f3;
+    --color-primary-50: #2a2622;
+    --color-primary-100: #38342f;
+    --color-primary-200: #4d4840;
+    --color-primary-300: #5f5a4f;
+    --color-primary-400: #7f7860;
+    --color-primary-500: #bbb4a8;
+    --color-primary-600: #dfd8ce;
+    --color-primary-700: #ede8e0;
+    --color-primary-800: #f8f7f4;
+    --color-primary-900: #fdfcfb;
+    --color-primary-950: #f8f7f4;
 
   }
 }
