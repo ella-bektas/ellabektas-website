@@ -28,7 +28,7 @@ export default function Home() {
       </PageSection>
 
       <PageSection backgroundColor="var(--color-neutral-0)" direction="vertical">
-        <Title size="m" align="center" style={{ fontSize: 'clamp(1rem, 2.5vw, 1.75rem)' }}>Favourite projects</Title>
+        <Title size="m" align="center" style={{ fontSize: 'clamp(1rem, 2.5vw, 1.75rem)', marginBottom: '3rem' }}>Favourite projects</Title>
         <div className={styles.grid}>
           <ProjectTile
             date="2026"
