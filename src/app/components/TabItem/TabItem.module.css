@@ -6,9 +6,8 @@
   padding: 0.5rem 1rem;
   border-radius: 0;
   border: none;
-  border-bottom: 2px solid var(--color-primary-600);
   cursor: pointer;
-  transition: border-color 0.2s;
+  transition: color 0.2s;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -24,9 +23,8 @@
   padding: 0.5rem 1rem;
   border-radius: 0;
   border: none;
-  border-bottom: 2px solid transparent;
   cursor: pointer;
-  transition: border-color 0.2s, color 0.2s;
+  transition: color 0.2s;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -35,5 +33,35 @@
 
 .inactive:hover {
   color: var(--text-primary);
-  border-bottom-color: var(--color-primary-400);
+}
+
+.textWrapper {
+  display: inline;
+  position: relative;
+}
+
+.active .textWrapper::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-primary-600);
+}
+
+.inactive .textWrapper::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-primary-400);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.inactive:hover .textWrapper::after {
+  opacity: 1;
 }

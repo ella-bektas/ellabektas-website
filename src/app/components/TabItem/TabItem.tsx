@@ -1,7 +1,6 @@
 "use client";
 
 import styles from './TabItem.module.css';
-import { Icons, IconName } from '@/app/icons';
 import Link from 'next/link';
 import BodyText from '@/app/components/Typography/BodyText';
 
@@ -10,27 +9,22 @@ export type TabItemProps = {
   href?: string;
   onClick?: () => void;
   isActive: boolean;
-  iconLeft?: IconName;
 };
 
 const TabItem = ({
   title,
   onClick,
   isActive,
-  iconLeft,
   href,
 }: TabItemProps) => {
-
-  const LeftIcon = iconLeft ? Icons[iconLeft] : null;
 
 
   const tabClassName = isActive ? styles.active : styles.inactive;
 
   const content = (
-    <>
-      {LeftIcon && <LeftIcon />}
+    <span className={styles.textWrapper}>
       <BodyText as="span" size="m">{title}</BodyText>
-    </>
+    </span>
   );
 
   

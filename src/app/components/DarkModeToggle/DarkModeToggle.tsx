@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from 'react';
+import { Icons } from '@/app/icons';
 import styles from './DarkModeToggle.module.css';
 
 export default function DarkModeToggle() {
@@ -30,6 +31,10 @@ export default function DarkModeToggle() {
 
   if (!mounted) return null;
 
+  const ToggleIcon = isDark ? Icons.ToggleOn : Icons.ToggleOff;
+  const MoonIcon = Icons.Moon;
+  const SunIcon = Icons.Sun;
+
   return (
     <button
       onClick={toggleDarkMode}
@@ -37,7 +42,9 @@ export default function DarkModeToggle() {
       aria-label="Toggle dark mode"
       title={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
     >
-      {isDark ? '☀️' : '🌙'}
+      <SunIcon className={styles.icon} />
+      <ToggleIcon className={styles.toggleIcon} />
+      <MoonIcon className={styles.icon} />
     </button>
   );
 }

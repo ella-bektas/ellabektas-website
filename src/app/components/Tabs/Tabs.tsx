@@ -2,10 +2,11 @@
 
 import styles from './Tabs.module.css';
 import TabItem, { TabItemProps } from '@/app/components/TabItem/TabItem';
+import DarkModeToggle from '@/app/components/DarkModeToggle/DarkModeToggle';
 import { usePathname } from 'next/navigation';
 
 export type TabsProps = {
-  tabs: Omit<TabItemProps, 'isActive'>[]; 
+  tabs: Omit<TabItemProps, 'isActive'>[];
 };
 
 const Tabs = ({ tabs }: TabsProps) => {
@@ -17,9 +18,10 @@ const Tabs = ({ tabs }: TabsProps) => {
         <TabItem
           key={index}
           {...tabProps}
-          isActive={tabProps.href === pathname} 
+          isActive={tabProps.href === pathname}
         />
       ))}
+      <DarkModeToggle />
     </div>
   );
 };

@@ -5,7 +5,6 @@ import styles from './Header.module.css';
 import Tabs from '@/app/components/Tabs/Tabs';
 import { TabItemProps } from '@/app/components/TabItem/TabItem';
 import Logo from '@/app/components/eblogo.svg';
-import DarkModeToggle from '@/app/components/DarkModeToggle/DarkModeToggle';
 
 type HeaderProps = {
   tabs: Omit<TabItemProps, 'isActive'>[];
@@ -20,8 +19,6 @@ const Header = ({ tabs }: HeaderProps) => {
       </div>
 
       <Tabs tabs={tabs} />
-
-      <DarkModeToggle />
     </div>
   );
 };
