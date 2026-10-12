@@ -6,7 +6,7 @@ import styles from './PageSection.module.css';
 
 type PageSectionProps = {
   children?: React.ReactNode;
-  paddingTop?: 's' | 'm' | 'l';
+  paddingTop?: 'none' | 's' | 'm' | 'l';
   paddingBottom?: 's' | 'm' | 'l';
   backgroundColor?: string;
   direction?: 'vertical' | 'horizontal';
@@ -15,7 +15,7 @@ type PageSectionProps = {
   glowColor?: string;
 };
 
-const paddingTopClass = { s: styles.paddingTopS, m: styles.paddingTopM, l: styles.paddingTopL };
+const paddingTopClass = { none: styles.paddingTopNone, s: styles.paddingTopS, m: styles.paddingTopM, l: styles.paddingTopL };
 const paddingBottomClass = { s: styles.paddingBottomS, m: styles.paddingBottomM, l: styles.paddingBottomL };
 
 export const PageSection = ({ children, paddingTop, paddingBottom, backgroundColor = 'var(--color-neutral-0)', direction = 'vertical', align = 'start', mouseGlow = false, glowColor = 'rgba(255, 100, 255, 0.4)' }: PageSectionProps) => {

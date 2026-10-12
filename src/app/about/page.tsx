@@ -42,28 +42,6 @@ const About = () => {
 				</BodyText>
 			</PageSection>
 
-			{/* Technical stack */}
-			<PageSection backgroundColor="transparent" direction="vertical">
-				<Title>Technical stack</Title>
-				<BodyText size="m">
-					I enjoy picking up technical tools as the market changes. Coding has been part of my work from start to end — tracking instrumentation with Amplitude, I&apos;m developing my JavaScript and TypeScript, and I&apos;m very familiar with HTML and CSS.
-				</BodyText>
-				<Stack direction="vertical" gap="m">
-					<div className={styles.skillRow}>
-						<span className={styles.skill}><span className={`${styles.dot} ${styles.dotBlue}`} />Figma</span>
-						<span className={styles.skill}><span className={`${styles.dot} ${styles.dotGrey}`} />Notion</span>
-						<span className={styles.skill}><span className={`${styles.dot} ${styles.dotOrange}`} />Amplitude</span>
-						<span className={styles.skill}><span className={`${styles.dot} ${styles.dotRed}`} />Salesforce</span>
-						<span className={styles.skill}><span className={`${styles.dot} ${styles.dotYellow}`} />JavaScript</span>
-					</div>
-					<div className={styles.skillRow}>
-						<span className={styles.skill}><span className={`${styles.dot} ${styles.dotBlue}`} />TypeScript</span>
-						<span className={styles.skill}><span className={`${styles.dot} ${styles.dotOrange}`} />HTML</span>
-						<span className={styles.skill}><span className={`${styles.dot} ${styles.dotPurple}`} />CSS</span>
-					</div>
-				</Stack>
-			</PageSection>
-
 		</main>
 	)
 }

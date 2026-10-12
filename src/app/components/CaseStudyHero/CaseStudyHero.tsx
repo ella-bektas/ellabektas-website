@@ -11,6 +11,7 @@ type CaseStudyHeroProps = {
   description: string;
   imageSrc: string;
   imageAlt: string;
+  noTopPadding?: boolean;
 };
 
 export const CaseStudyHero = ({
@@ -18,10 +19,11 @@ export const CaseStudyHero = ({
   tagline,
   description,
   imageSrc,
-  imageAlt
+  imageAlt,
+  noTopPadding = false
 }: CaseStudyHeroProps) => {
   return (
-    <div className={styles.hero}>
+    <div className={`${styles.hero} ${noTopPadding ? styles.noTopPadding : ''}`}>
       <div className={styles.content}>
         <Title size="xl">{title}</Title>
         <BodyText size="m" weight="bold">{tagline}</BodyText>

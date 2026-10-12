@@ -54,6 +54,7 @@
     align-items: center;
 }
 
+.paddingTopNone { padding-top: 0; }
 .paddingTopS  { padding-top: 4vh; }
 .paddingTopM  { padding-top: 8vh; }
 .paddingTopL  { padding-top: 14vh; }

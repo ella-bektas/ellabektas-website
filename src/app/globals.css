@@ -30,6 +30,7 @@
   --text-primary: var(--color-neutral-900);
   --text-secondary: var(--color-neutral-600);
   --text-tertiary: var(--color-neutral-500);
+  --text-placeholder: var(--color-neutral-400);
 }
 
 html[data-theme="dark"] {
@@ -60,6 +61,7 @@ html[data-theme="dark"] {
   --color-primary-900: #fdfcfb;
   --color-primary-950: #f8f7f4;
 
+  --text-placeholder: var(--color-neutral-600);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -91,6 +93,7 @@ html[data-theme="dark"] {
     --color-primary-900: #fdfcfb;
     --color-primary-950: #f8f7f4;
 
+    --text-placeholder: var(--color-neutral-600);
   }
 }
 

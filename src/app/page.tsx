@@ -46,14 +46,13 @@ export default function Home() {
             image="./images/gitflow-hero.png"
             description="Introducing a new Gitflow branching strategy into our continuous delivery product."
             href="/gitflow-ci-cd"
+            alignment="center"
             index={0}
           />
           <ProjectTile
             date="2025"
             title="DORA metrics for CI pipelines"
-            image="./images/dora-hero.png"
             description="Enabling automation teams to track and improve DevOps performance."
-            href="/dora-metrics-ci"
             index={1}
           />
         </div>

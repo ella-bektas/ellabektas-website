@@ -42,3 +42,7 @@
     width: 100%;
   }
 }
+
+.noTopPadding {
+  padding-top: 0;
+}
