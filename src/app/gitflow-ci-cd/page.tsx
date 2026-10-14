@@ -15,12 +15,15 @@ export default function GitflowCaseStudy() {
     <main className="case-study">
       <PageSection backgroundColor="var(--color-neutral-0)" direction="vertical" paddingTop="none">
         <CaseStudyHero
-          title="Gitflow for CI/CD"
+          title="Mature DevOps teams couldn't use our pipelines."
           tagline="Enabling enterprise teams to adopt mature DevOps branching practices"
           description="We were losing enterprise deals specifically because our branching model didn't support Gitflow workflows. For teams with more mature DevOps practices, this was a dealbreaker. I led the design effort to unlock this market segment."
-          imageSrc="/images/gitflow-hero.png"
+          imageSrc="/images/gitflow-case-study-hero.png"
           imageAlt="Gitflow CI/CD project"
           noTopPadding
+          titleFontSize="clamp(2rem, 6vw, 4.5rem)"
+          subtitle="They worked in Gitflow. We only supported a single branching strategy."
+          imageBelowHeading
         />
       </PageSection>
 
