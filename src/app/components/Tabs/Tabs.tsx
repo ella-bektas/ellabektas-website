@@ -2,7 +2,6 @@
 
 import styles from './Tabs.module.css';
 import TabItem, { TabItemProps } from '@/app/components/TabItem/TabItem';
-import DarkModeToggle from '@/app/components/DarkModeToggle/DarkModeToggle';
 import { usePathname } from 'next/navigation';
 
 export type TabsProps = {
@@ -21,7 +20,6 @@ const Tabs = ({ tabs }: TabsProps) => {
           isActive={tabProps.href === pathname}
         />
       ))}
-      <DarkModeToggle />
     </div>
   );
 };

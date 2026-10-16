@@ -33,39 +33,8 @@
   --text-placeholder: var(--color-neutral-400);
 }
 
-html[data-theme="dark"] {
-  /* Neutral Colors (Taupe) - Dark Mode */
-  --color-neutral-0: #0f0e0d;
-  --color-neutral-50: #1a1816;
-  --color-neutral-100: #211d1a;
-  --color-neutral-200: #2d2925;
-  --color-neutral-300: #3a322f;
-  --color-neutral-400: #4a423a;
-  --color-neutral-500: #5e5550;
-  --color-neutral-600: #78716b;
-  --color-neutral-700: #9d8b7e;
-  --color-neutral-800: #b5a596;
-  --color-neutral-900: #d9cfc4;
-  --color-neutral-950: #f8f6f4;
-
-  /* Brand - Primary Accent (Olive) - Dark Mode */
-  --color-primary-50: #2a2622;
-  --color-primary-100: #38342f;
-  --color-primary-200: #4d4840;
-  --color-primary-300: #5f5a4f;
-  --color-primary-400: #7f7860;
-  --color-primary-500: #bbb4a8;
-  --color-primary-600: #dfd8ce;
-  --color-primary-700: #ede8e0;
-  --color-primary-800: #f8f7f4;
-  --color-primary-900: #fdfcfb;
-  --color-primary-950: #f8f7f4;
-
-  --text-placeholder: var(--color-neutral-600);
-}
-
 @media (prefers-color-scheme: dark) {
-  html:not([data-theme="light"]) {
+  :root {
     /* Neutral Colors (Taupe) - Dark Mode */
     --color-neutral-0: #0f0e0d;
     --color-neutral-50: #1a1816;
@@ -92,7 +61,6 @@ html[data-theme="dark"] {
     --color-primary-800: #f8f7f4;
     --color-primary-900: #fdfcfb;
     --color-primary-950: #f8f7f4;
-
     --text-placeholder: var(--color-neutral-600);
   }
 }

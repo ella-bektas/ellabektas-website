@@ -7,7 +7,6 @@ import { TabItemProps } from '@/app/components/TabItem/TabItem';
 import Logo from '@/app/components/eblogo.svg';
 import Breadcrumb, { BreadcrumbItem } from '@/app/components/Breadcrumb/Breadcrumb';
 import { useBreadcrumbs } from '@/app/components/Breadcrumb/BreadcrumbContext';
-import DarkModeToggle from '@/app/components/DarkModeToggle/DarkModeToggle';
 
 type HeaderProps = {
   tabs: Omit<TabItemProps, 'isActive'>[];
@@ -22,7 +21,6 @@ const Header = ({ tabs, breadcrumbs }: HeaderProps) => {
     return (
       <div className={styles.container}>
         <Breadcrumb items={activeBreadcrumbs} />
-        <DarkModeToggle />
       </div>
     );
   }

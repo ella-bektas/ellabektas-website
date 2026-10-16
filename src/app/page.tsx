@@ -52,7 +52,10 @@ export default function Home() {
           <ProjectTile
             date="2025"
             title="DORA metrics for CI pipelines"
+            image="./images/dora-sketch-dashboard.png"
             description="Enabling automation teams to track and improve DevOps performance."
+            alignment="center"
+            active={false}
             index={1}
           />
         </div>

@@ -14,16 +14,22 @@ type ProjectTileProps = {
   href?: string;
   alignment?: Alignment;
   index?: number;
+  active?: boolean;
 };
 
-const ProjectTile = ({ date, title, image, description, href, alignment = 'bottom', index = 0 }: ProjectTileProps) => {
+const ProjectTile = ({ date, title, image, description, href, alignment = 'bottom', index = 0, active = true }: ProjectTileProps) => {
   const content = (
     <>
-      <div className={`${styles.imageContainer} ${styles[alignment]}`}>
+      <div className={`${styles.imageContainer} ${styles[alignment]} ${active ? '' : styles.locked}`}>
         {image ? (
           <img className={styles.image} src={image} alt={title} />
         ) : (
           <span className={styles.comingSoon}>Coming soon</span>
+        )}
+        {!active && image && (
+          <div className={styles.overlay}>
+            <span className={styles.overlayLabel}>Coming soon</span>
+          </div>
         )}
       </div>
       <div className={styles.date}>{date}</div>
@@ -38,7 +44,7 @@ const ProjectTile = ({ date, title, image, description, href, alignment = 'botto
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.15, ease: 'easeOut' }}
     >
-      {href ? (
+      {href && active ? (
         <Link href={href} className={styles.container}>{content}</Link>
       ) : (
         <div className={`${styles.container} ${styles.static}`}>{content}</div>
