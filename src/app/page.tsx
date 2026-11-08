@@ -23,7 +23,7 @@ export default function Home() {
 
   return (
     <main>
-      <PageSection backgroundColor="var(--color-neutral-50)" direction="vertical" align="center" mouseGlow={true} glowColor="rgba(94, 85, 80, 0.4)">
+      <PageSection backgroundColor="var(--color-neutral-50)" direction="vertical" align="center">
         <Hero imageSrc="/images/outline-profile.png" imageAlt="Ella Bektas" imagePosition="left" imageWidth={400} imageHeight={400}>
           <Title size="xl">Ella Bektas</Title>
           <BodyText size="m" weight="bold" style={{ fontSize: 'clamp(1rem, 2.5vw, 1.75rem)' }}>Making technical products feel easy.</BodyText>
@@ -45,8 +45,8 @@ export default function Home() {
             title="Gitflow for CI/CD"
             image="./images/gitflow-hero.png"
             description="Introducing a new Gitflow branching strategy into our continuous delivery product."
-            href="/gitflow-ci-cd"
             alignment="center"
+            active={false}
             index={0}
           />
           <ProjectTile
