@@ -19,19 +19,16 @@ export const Active: Story = {
         title: 'Portfolio',
         href: '/',
         onClick: () => alert('Clicked Tab 1!'),
-        iconLeft: 'HomeOutline',
       },
       {
         title: 'About',
         href: '/about',
         onClick: () => alert('Clicked Tab 2!'),
-        iconLeft: undefined, // no icon
       },
       {
         title: 'Contact',
         href: '/contact',
         onClick: () => alert('Clicked Tab 3!'),
-        iconLeft: undefined,
       },
     ],
   },
