@@ -1,7 +1,8 @@
 import "./globals.css";
-import { Poppins } from 'next/font/google';
+import { Playfair_Display } from 'next/font/google';
 import Header from '@/app/components/Header/Header';
 import Footer from '@/app/components/Footer/Footer';
+import { BreadcrumbProvider } from '@/app/components/Breadcrumb/BreadcrumbContext';
 import { GoogleAnalytics } from '@next/third-parties/google'
 import type { Metadata } from 'next';
 
@@ -10,13 +11,10 @@ export const metadata: Metadata = {
   description: 'Making complexity feel easy. I make complex tech simple to use. Enabling automation teams to track and improve DevOps performance.',
 };
 
-
-
-
-const poppins = Poppins({
+const playfairDisplay = Playfair_Display({
   weight: ['400', '500', '600', '700'],
   subsets: ['latin'],
-  variable: '--font-poppins',
+  variable: '--font-playfair',
 });
 
 export default function RootLayout({
@@ -27,28 +25,30 @@ export default function RootLayout({
  
 
   return (
-    <html lang="en" className={poppins.className}>
+    <html lang="en" className={playfairDisplay.className}>
       <body>
       <GoogleAnalytics gaId="G-WYW1D4WQDN" />
+      <BreadcrumbProvider>
       <div className= "page">
       <main className= "main">
       <Header tabs={[
-      { href: '/', title: 'Portfolio', iconLeft: 'HomeOutline' },
-      { href: '/about', title: 'About', iconLeft: 'User' },
+      { href: '/', title: 'Portfolio' },
+      { href: '/about', title: 'About' },
        ]}
       />
       <div className="page-content">
       {children}
       </div>
-      
 
-      <Footer> 
+
+      <Footer>
        {}
       </Footer>
 
 
         </main>
       </div>
+      </BreadcrumbProvider>
       </body>
     </html>
   );

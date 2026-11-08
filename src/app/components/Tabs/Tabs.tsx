@@ -5,7 +5,7 @@ import TabItem, { TabItemProps } from '@/app/components/TabItem/TabItem';
 import { usePathname } from 'next/navigation';
 
 export type TabsProps = {
-  tabs: Omit<TabItemProps, 'isActive'>[]; 
+  tabs: Omit<TabItemProps, 'isActive'>[];
 };
 
 const Tabs = ({ tabs }: TabsProps) => {
@@ -17,7 +17,7 @@ const Tabs = ({ tabs }: TabsProps) => {
         <TabItem
           key={index}
           {...tabProps}
-          isActive={tabProps.href === pathname} 
+          isActive={tabProps.href === pathname}
         />
       ))}
     </div>

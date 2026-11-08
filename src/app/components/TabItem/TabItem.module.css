@@ -1,13 +1,13 @@
 /* Active state */
 
 .active {
-  background-color: #FBF9F8;
+  background-color: transparent;
   color: var(--text-primary);
   padding: 0.5rem 1rem;
-  border-radius: 10px;
+  border-radius: 0;
   border: none;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: color 0.2s;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -21,10 +21,10 @@
   background-color: transparent;
   color: var(--text-secondary);
   padding: 0.5rem 1rem;
-  border-radius: 10px;
+  border-radius: 0;
   border: none;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: color 0.2s;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -32,5 +32,36 @@
 }
 
 .inactive:hover {
-  background-color: #FBF9F8;
+  color: var(--text-primary);
+}
+
+.textWrapper {
+  display: inline;
+  position: relative;
+}
+
+.active .textWrapper::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-primary-600);
+}
+
+.inactive .textWrapper::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-primary-400);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.inactive:hover .textWrapper::after {
+  opacity: 1;
 }

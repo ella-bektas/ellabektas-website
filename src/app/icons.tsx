@@ -2,7 +2,7 @@ import { AiOutlineTikTok, AiOutlineGithub, AiOutlineLinkedin, AiFillHome, AiOutl
 import { FaYoutube } from "react-icons/fa";
 
 export const Icons = {
-  None: undefined, 
+  None: undefined,
   HomeFill: AiFillHome,
   HomeOutline: AiOutlineHome,
   User: AiOutlineUser,
